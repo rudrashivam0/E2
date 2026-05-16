@@ -4,13 +4,15 @@ import { CDN_URL } from "../utils/constant";
 const RestaurantCard = (props) => {
     const { resData } = props;
 
-    const { cloudinaryImageId,
+    const {
+        cloudinaryImageId,
         name,
         avgRating,
         cuisines,
         costForTwo,
-        deliveryTime
-    } = resData?.data;
+        sla,
+        locality
+    } = resData?.info || {};
 
 
     //! props.resData.data.name ==== props ascess objecy direct from ythis 
@@ -27,12 +29,12 @@ const RestaurantCard = (props) => {
                     cloudinaryImageId
                 }
             />
-
-            <h3>{name}</h3>
-            <h4>{cuisines.join(",  ")}</h4>
+            <h4>{name}</h4>
+            <h4>{cuisines?.join(", ")}</h4>
             <h4>{avgRating}</h4>
-            <h4>{costForTwo / 100} FOR TWO</h4>
-            <h4>{deliveryTime} min</h4>
+            <h4>{costForTwo}</h4>
+            <h4>{sla?.deliveryTime} min</h4>
+            {/* <h3>{locality} </h3> */}
 
 
 

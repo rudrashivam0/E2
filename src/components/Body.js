@@ -1,8 +1,10 @@
 import React from 'react'
 import RestaurantCard from './ResturantCard'
 import resList from '../utils/mock_data'
+import Shimmer from './Shimmer'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
 
 //! state variable  -> super power variable 
 
@@ -48,14 +50,17 @@ import { useState } from 'react'
 //             avgRating: '4.1',
 
 //         }
-//     },
+//     }, 
 // ];
 
 const Body = () => {
 
     // TO MODIFY THE LIST WE USE A FUNCTION OR CALL BACK FUNCTION setListResturant TO UPDATE THE LIST 
 
-    const [resturantList, setListResturant] = useState(resList);
+    //?Below is the state variable and its initial value is the resturantList which is an array of object 
+    const [resturantList, setListResturant] = useState([]);
+
+    const [searchText, setSearchText] = useState([]);
 
     // const [resturantList, setListResturant] = useState([
     //     {
@@ -99,16 +104,102 @@ const Body = () => {
     //     },
     // ]);
 
+    //! REact hook 
+    //! useEffect() -> a normat js function which is called after render of the components
 
-    return (
+
+
+    // const fetchData = async () => {
+    //     const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=25.3264867&lng=82.9864435&carousel=true&third_party_vendor=1");
+
+    //     const json = await data.json();
+    //     console.log(json);
+    //     const restaurantCard = json?.data?.cards?.find(
+    //         (card) =>
+    //             card?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    //     );
+
+    //     setListResturant(
+    //         restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    //     );
+    // }
+
+
+
+    const fetchData = async () => {
+        try {
+            const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=12.9352403&lng=77.624532&carousel=true&third_party_vendor=1");
+
+            const json = await data.json();
+
+            const restaurantCard = json?.data?.cards?.find(
+                (card) =>
+                    card?.card?.card?.gridElements?.infoWithStyle?.restaurants
+            );
+
+            const restaurants =
+                restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+            setListResturant(restaurants);
+            // console.log(restaurants);
+        } catch (error) {
+            console.log("API Error:", error);
+        }
+    };
+
+
+
+    const useHook = useEffect(() => {
+        // console.log("this is useEffect")
+        fetchData();
+        console.log(resturantList)
+    }, [])
+
+
+    //? Bellow things also known as conditional rendering 
+    // if (resturantList.length === 0) {
+    //     return Shimmer();
+    // }
+
+    console.log("body rendered ")
+
+
+    return resturantList.length === 0 ? (<Shimmer />) : (
         <div className="body-Cont">
+
             <div className="filter">
+
                 {/* <input type="text" placeholder="Search food"></input>
                 <button>Search</button> */}
+
+                <div className='serch-cont'>
+
+                    <input type='text' className='search-box' placeholder='Search For Restaurant'
+                        value={searchText} onChange={(e) => {
+                            setSearchText(e.target.value);
+                        }} ></input>
+
+                    {/* // onClick filter out card and update the UI */}
+
+                    <button className='btn-2' onClick={() => {
+                        // Need to filter the data
+
+                        const filteredRest = resturantList.filter((res) => {
+                            res.data.name.includes(searchText)
+                        });
+                        console.log(searchText);
+
+
+                        setListResturant(filteredRest);
+
+                    }}>Search</button>
+
+                </div>
+
                 <button className='Top-reted-res' onClick={() => {
 
                     const currRes = resturantList.filter(
-                        (res) => res.data.avgRating > 4 );
+                        (res) => res.info.avgRating > 4.5);
 
                     setListResturant(currRes);
 
@@ -124,6 +215,7 @@ const Body = () => {
 
 
             </div>
+
             <div className="res-Cont">
 
                 {/* //? Restaurant card */}
@@ -142,12 +234,14 @@ const Body = () => {
 
 
                 {
-                    resturantList.map((restaurant) => (<RestaurantCard key={restaurant.data.id} resData={restaurant} />))
+                    resturantList.map((restaurant, index) => (<RestaurantCard key={restaurant?.info?.id ?? index} resData={restaurant} />))
                 }
 
             </div>
         </div>
     )
+
+
 }
 
 

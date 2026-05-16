@@ -121,3 +121,39 @@ body {
     margin: 1rem 6.48rem;
     cursor: pointer;
 }
+
+.shimmer-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 230px);
+    justify-content: center;
+    gap: 4rem;
+    padding: 1.75rem 1rem;
+}
+
+
+.shimmer-box {
+    width: 230px;
+    height: 310px;
+    background-color: rgba(246, 243, 243, 0.55);
+    border-radius: 4px;
+
+}
+
+.login-btn {
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.serch-cont {
+    padding-left: 6.5rem;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.btn-2{
+    margin-left: 1rem;
+
+}
