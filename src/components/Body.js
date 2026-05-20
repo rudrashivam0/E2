@@ -60,7 +60,9 @@ const Body = () => {
     //?Below is the state variable and its initial value is the resturantList which is an array of object 
     const [resturantList, setListResturant] = useState([]);
 
-    const [searchText, setSearchText] = useState([]);
+    const [filteredResturant, setFilteredResturant] = useState([]);
+
+    const [searchText, setSearchText] = useState("");
 
     // const [resturantList, setListResturant] = useState([
     //     {
@@ -128,7 +130,7 @@ const Body = () => {
 
     const fetchData = async () => {
         try {
-            const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=12.9352403&lng=77.624532&carousel=true&third_party_vendor=1");
+            const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=12.9352403&lng=77.624532&carousel=true&third_party_vendor=1");
 
             const json = await data.json();
 
@@ -136,11 +138,13 @@ const Body = () => {
                 (card) =>
                     card?.card?.card?.gridElements?.infoWithStyle?.restaurants
             );
+            console.log(restaurantCard);
 
             const restaurants =
                 restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-
+            console.log(restaurants);
             setListResturant(restaurants);
+            setFilteredResturant(restaurants);
             // console.log(restaurants);
         } catch (error) {
             console.log("API Error:", error);
@@ -152,7 +156,7 @@ const Body = () => {
     const useHook = useEffect(() => {
         // console.log("this is useEffect")
         fetchData();
-        console.log(resturantList)
+        // console.log(resturantList)
     }, [])
 
 
@@ -185,12 +189,13 @@ const Body = () => {
                         // Need to filter the data
 
                         const filteredRest = resturantList.filter((res) => {
-                            res.data.name.includes(searchText)
+                            //convert both of them into lower case pleade 
+                            return res.info.name.toLowerCase().includes(searchText.toLowerCase())
                         });
                         console.log(searchText);
 
-
-                        setListResturant(filteredRest);
+                        // setListResturant(filteredRest);
+                        setFilteredResturant(filteredRest);
 
                     }}>Search</button>
 
@@ -200,9 +205,7 @@ const Body = () => {
 
                     const currRes = resturantList.filter(
                         (res) => res.info.avgRating > 4.5);
-
-                    setListResturant(currRes);
-
+                    setFilteredResturant(currRes);
                 }}
 
 
@@ -234,7 +237,7 @@ const Body = () => {
 
 
                 {
-                    resturantList.map((restaurant, index) => (<RestaurantCard key={restaurant?.info?.id ?? index} resData={restaurant} />))
+                    filteredResturant.map((restaurant, index) => (<RestaurantCard key={restaurant?.info?.id} resData={restaurant} />))
                 }
 
             </div>

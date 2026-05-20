@@ -59,8 +59,11 @@ const AppLayout = () => {
         <div className="app">
             {/* //HAeader */}
             {/* <Header /> */}
-            {Header()}
-            {Body()}
+            {/* {Header()}
+            {Body()} */}
+
+            <Header />
+            <Body />
             {/* // Body  */}
         </div>
     )

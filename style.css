@@ -93,6 +93,9 @@ body {
 }
 
 .res-Card {
+    display: flex;
+    flex-direction: column;
+    gap: .2 rem;
     width: 220px;
     height: 350px;
     border-radius: 4px;
@@ -100,6 +103,7 @@ body {
     border: 1px solid rgb(225, 215, 215);
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.553);
+   
 }
 
 .res-logo {
@@ -113,6 +117,7 @@ body {
 .res-Card:hover {
     border: 2px solid rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
 
 }
 
@@ -153,7 +158,8 @@ body {
     justify-content: space-between;
     align-self: center;
 }
-.btn-2{
+
+.btn-2 {
     margin-left: 1rem;
 
 }
