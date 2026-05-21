@@ -130,7 +130,7 @@ const Body = () => {
 
     const fetchData = async () => {
         try {
-            const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=12.9352403&lng=77.624532&carousel=true&third_party_vendor=1");
+            const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=25.3264867&lng=82.9864435&carousel=true&third_party_vendor=1");
 
             const json = await data.json();
 
@@ -165,7 +165,7 @@ const Body = () => {
     //     return Shimmer();
     // }
 
-    console.log("body rendered ")
+    // console.log("body rendered ")
 
 
     return resturantList.length === 0 ? (<Shimmer />) : (
@@ -249,3 +249,9 @@ const Body = () => {
 
 
 export default Body
+
+
+
+//? Never Create State Variable as useState out side the component 
+//? Always create state Variable at top of the component 
+//?never create inside if else => create inconsistency in code 
