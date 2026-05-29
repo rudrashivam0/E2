@@ -2,6 +2,7 @@ import React from 'react'
 import RestaurantCard from './ResturantCard'
 import resList from '../utils/mock_data'
 import Shimmer from './Shimmer'
+import { Link } from 'react-router-dom'
 
 import { useState, useEffect } from 'react'
 
@@ -130,7 +131,7 @@ const Body = () => {
 
     const fetchData = async () => {
         try {
-            const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=25.3264867&lng=82.9864435&carousel=true&third_party_vendor=1");
+            const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=28.5915724&lng=77.3091084&carousel=true&third_party_vendor=1");
 
             const json = await data.json();
 
@@ -237,8 +238,10 @@ const Body = () => {
 
 
                 {
-                    filteredResturant.map((restaurant, index) => (<RestaurantCard key={restaurant?.info?.id} resData={restaurant} />))
-                }
+                    filteredResturant.map((restaurant, index) => (
+                        <Link to={"/resturants/" + restaurant.info.id} key={restaurant?.info?.id} > <RestaurantCard resData={restaurant} /></Link>
+
+                    ))}
 
             </div>
         </div>
@@ -254,4 +257,5 @@ export default Body
 
 //? Never Create State Variable as useState out side the component 
 //? Always create state Variable at top of the component 
-//?never create inside if else => create inconsistency in code 
+//?never create inside if else or for loop or inside fuctions => create inconsistency in code 
+//? State variable ment to be created inside fucntional component and at the top of componrnt 

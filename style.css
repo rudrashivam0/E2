@@ -103,7 +103,7 @@ body {
     border: 1px solid rgb(225, 215, 215);
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.553);
-   
+
 }
 
 .res-logo {
@@ -117,7 +117,7 @@ body {
 .res-Card:hover {
     border: 2px solid rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
+
 
 }
 
@@ -162,4 +162,29 @@ body {
 .btn-2 {
     margin-left: 1rem;
 
+}
+
+.error-page {
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 45%;
+    padding-top: 21%;
+}
+
+.user-card {
+    background-color: rgba(81, 248, 248, 0.556);
+    margin-left: 2rem;
+    padding: 5rem;
+    width: 30vw;
+    border: 1px solid black;
+}
+
+.user-card1 {
+    background-color: rgb(215, 227, 227);
+    margin-left: 2rem;
+    padding: 5rem;
+    width: 30vw;
+    border: 1px solid black;
 }

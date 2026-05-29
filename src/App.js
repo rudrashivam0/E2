@@ -3,7 +3,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
+//? imort of react touter in V6
+// import { createBrowserRouter } from "react-router-dom";
+//? imort of react touter in V7
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Outlet
+} from "react-router-dom";
 
+import About from "./components/About";
+import ContactUs from "./components/ContactUs";
+
+import Error from "./components/Error";
+
+import Resturantmenu from "./components/Resturantmenu";
 
 
 /**
@@ -63,16 +77,57 @@ const AppLayout = () => {
             {Body()} */}
 
             <Header />
-            <Body />
+
+            {/* if path is = / then body  */}
+
+            {/* if path is = about  then about  */}
+
+            {/* if path is = contact then contact   */}
+
+            <Outlet />
+
+            {/* <Body /> */}
             {/* // Body  */}
         </div>
     )
 }
 
+//? BAsic Routing is this 
+
+const appRouter = createBrowserRouter([
+    {
+        path: "/",
+        element: <AppLayout />,
+        children: [
+            {
+                path: "/",
+                element: <Body />,
+            },
+            {
+                path: "/about",
+                element: <About />,
+            },
+            {
+                path: "/contact",
+                element: <ContactUs />
+            },
+            {
+                //? the resId is dynamic for diffrent router  resturant 
+                path: "/resturants/:resId",
+                element: < Resturantmenu />
+
+            }
+        ],
+        errorElement: <Error /> //? this is used to handle Error 
+    },
+
+])
+
+
 
 const mainRoot = ReactDOM.createRoot(document.querySelector("#root"))
 
-mainRoot.render(<AppLayout />);
+mainRoot.render(<RouterProvider router={appRouter} />);
 
 
 ///? ALL about data as JSON from swiggi 
