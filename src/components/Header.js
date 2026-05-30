@@ -16,7 +16,7 @@ const Header = () => {
     //? if u put somthing in dependency the it only render when dependency changes
 
     useEffect(() => {
-        console.log("Use effect called");
+        // console.log("Use effect called");
     }, [btnNameReact])
 
 

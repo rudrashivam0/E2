@@ -11,6 +11,7 @@ export const Resturantmenu = () => {
     //? ResId extract from the useParem hook given by react 
     //? useParems give us OBject with resId 
     const { resId } = useParams();
+
     // console.log(parems)
 
     useEffect(() => {
@@ -42,7 +43,7 @@ export const Resturantmenu = () => {
 
     console.log(itemCards);
 
-    console.log(itemCards[0].card.info.name);
+    // console.log(itemCards[0].card.info.name);
 
 
     return (
@@ -65,10 +66,12 @@ export const Resturantmenu = () => {
                 <li>{itemCards[2].card.info.name}</li> */}
 
                 {
-                    itemCards.map((item) => {
-                        return <li key={item.card.info.id}>
-                            {item.card.info.name} - {"₹"} {item.card.info.price / 100}
-                        </li>
+                    itemCards?.map((item) => {
+                        return (
+                            <li key={item.card.info.id}>
+                                {item.card.info.name} - ₹ {item.card.info.price / 100}
+                            </li>
+                        )
                     })
                 }
             </ul>

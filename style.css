@@ -194,3 +194,8 @@ body {
     text-decoration: none;
      color: inherit;
 }
+
+.avatar{
+    width: 5rem;
+    height: 5rem;
+}
