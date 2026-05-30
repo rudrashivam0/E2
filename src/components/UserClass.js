@@ -6,18 +6,25 @@ class UserClass extends React.Component {
     constructor(props) {
         super(props);
         // const [count] = useState()
-        console.log(props);
+        // console.log(props);
         //? ths is the way to create state var in class based component and it take a big Object  which will contain all the state variables 
         this.state = {
             count: 0,
             count2: 1,
         }
+        console.log("Child constructor is called");
     }
-    render() {
 
+
+    componentDidMount() {
+        console.log("Child componentDidMount is called");
+    }
+
+    render() {
+        console.log("Child render is called   ");
         const { name, location } = this.props;
         const { count, count2 } = this.state;
-        return (  
+        return (
             <div className='user-card1'>
                 <h2>Count : {count}</h2>
                 <h2>Count : {count2}</h2>
@@ -26,7 +33,7 @@ class UserClass extends React.Component {
 
                     //! right way to do that 
                     this.setState({
-                        count: this.state.count + 1,
+                        count: count + 1,
                         count2: this.state.count2 + 2
                     })
 
