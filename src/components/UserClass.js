@@ -21,16 +21,22 @@ class UserClass extends React.Component {
             }
 
         }
-        console.log(this.props.name + "Child constructor is called");
+        // console.log(this.props.name + "Child constructor is called");
     }
 
 
     async componentDidMount() {
+
+        // this.time = setInterval(() => {
+        //     console.log("I am setInterval");
+        // }, 1000)
+
+
         //? There we call API wnd Why ?
         //! BCZ of Child constructor is called
         //! Child render is called   
         //!Child componentDidMount is  called at the end very time
-        console.log(this.props.name + "Child componentDidMount is called");
+        // console.log(this.props.name + "Child componentDidMount is called");
         const data = await fetch("https://api.github.com/users/rudrashivam0#");
         const json = await data.json();
         console.log(json);
@@ -46,14 +52,23 @@ class UserClass extends React.Component {
         if (this.state.count !== prevState.count) {
             //
         }
-        if (this.state.count !== prevState.count2 ) {
+        if (this.state.count2 !== prevState.count2) {
+            console.log(this.state.count2);
             //
         }
+        // if (this.state.userInfo.name !== prevState.userInfo.name) {
+        //     //
+        //     console.log(this.state.userInfo.name);
+        // }
 
     }
 
     componentWillUnmount() {
-        console.log(this.props.name + "componentWillUnmount is called");
+
+        clearInterval(this.time);
+        // console.log("Set Interval Is Clear");
+
+        // console.log(this.props.name + "componentWillUnmount is called");
     }
 
 
@@ -61,7 +76,7 @@ class UserClass extends React.Component {
 
 
     render() {
-        console.log(this.props.name + "Child render is called   ");
+        // console.log(this.props.name + "Child render is called   ");
         // const { name, location } = this.props;
         const { count, count2 } = this.state;
 
@@ -70,10 +85,10 @@ class UserClass extends React.Component {
             <div className='user-card1'>
 
 
-                {/* <h2>Count : {count}</h2>
-                <h2>Count : {count2}</h2> */}
+                {/* <h2>Count : {count}</h2> */}
+                <h2>Count : {count2}</h2>
 
-                {/* <button onClick={() => {
+                <button onClick={() => {
                     //? NEVER Upd date state vae directly  like this.state.count += 1;
 
                     //! right way to do that 
@@ -82,7 +97,7 @@ class UserClass extends React.Component {
                         count2: this.state.count2 + 2
                     })
 
-                }}>Count Increase</button> */}
+                }}>Count Increase</button>
 
                 <img className='avatar' src={avatar_url} alt="Image"></img>
                 <h4>

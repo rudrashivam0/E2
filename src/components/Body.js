@@ -5,6 +5,9 @@ import Shimmer from './Shimmer'
 import { Link } from 'react-router-dom'
 
 import { useState, useEffect } from 'react'
+import useOnlineStatus from '../utils/useOnlineStatus'
+
+import useAllResturant from '../utils/useAllResturant'
 
 
 //! state variable  -> super power variable 
@@ -56,10 +59,15 @@ import { useState, useEffect } from 'react'
 
 const Body = () => {
 
+    // console.log("functions ",useAllResturant);
+
     // TO MODIFY THE LIST WE USE A FUNCTION OR CALL BACK FUNCTION setListResturant TO UPDATE THE LIST 
 
     //?Below is the state variable and its initial value is the resturantList which is an array of object 
-    const [resturantList, setListResturant] = useState([]);
+    // const [resturantList, setListResturant] = useState([]);
+
+    const resturantList = useAllResturant();
+    console.log("resturantList ", resturantList);
 
     const [filteredResturant, setFilteredResturant] = useState([]);
 
@@ -110,55 +118,11 @@ const Body = () => {
     //! REact hook 
     //! useEffect() -> a normat js function which is called after render of the components
 
+    //! here we use useEffect to update the filteredResturant when the resturantList changes
+    useEffect(() => {
+        setFilteredResturant(resturantList);
+    }, [resturantList]);
 
-
-    // const fetchData = async () => {
-    //     const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=25.3264867&lng=82.9864435&carousel=true&third_party_vendor=1");
-
-    //     const json = await data.json();
-    //     console.log(json);
-    //     const restaurantCard = json?.data?.cards?.find(
-    //         (card) =>
-    //             card?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    //     );
-
-    //     setListResturant(
-    //         restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    //     );
-    // }
-
-
-
-    const fetchData = async () => {
-        try {
-            const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=28.5915724&lng=77.3091084&carousel=true&third_party_vendor=1");
-
-            const json = await data.json();
-
-            const restaurantCard = json?.data?.cards?.find(
-                (card) =>
-                    card?.card?.card?.gridElements?.infoWithStyle?.restaurants
-            );
-            console.log(restaurantCard);
-
-            const restaurants =
-                restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-            console.log(restaurants);
-            setListResturant(restaurants);
-            setFilteredResturant(restaurants);
-            // console.log(restaurants);
-        } catch (error) {
-            console.log("API Error:", error);
-        }
-    };
-
-
-
-    const useHook = useEffect(() => {
-        // console.log("this is useEffect")
-        fetchData();
-        // console.log(resturantList)
-    }, [])
 
 
     //? Bellow things also known as conditional rendering 
@@ -167,6 +131,13 @@ const Body = () => {
     // }
 
     // console.log("body rendered ")
+
+
+    const onlineStatus = useOnlineStatus();
+
+    if (onlineStatus === false) {
+        return <h1>Looks like you are offline !! Please check your internet connection</h1>
+    }
 
 
     return resturantList.length === 0 ? (<Shimmer />) : (

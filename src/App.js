@@ -12,14 +12,31 @@ import {
     Outlet
 } from "react-router-dom";
 
-import About from "./components/About";
+// import About from "./components/About";
 import ContactUs from "./components/ContactUs";
 
 import Error from "./components/Error";
 
 import Resturantmenu from "./components/Resturantmenu";
+// import Grocery from "./components/Grocery";
+import { lazy, Suspense } from "react";
 
 
+//? Chunking
+//? Code Splitting
+//? Lazy Loading => only load when needed or On deman load 
+//? Dynamic Bundling 
+//? Dynamic Import
+//? 
+
+const Grocery = React.lazy(() => {
+    return import("./components/Grocery")
+
+})
+
+const About = lazy(() => {
+    return import("./components/About") 
+})
 /**
  * //!
  *? HEADER 
@@ -46,6 +63,7 @@ import Resturantmenu from "./components/Resturantmenu";
  * -Contact 
  * 
  */
+
 
 
 
@@ -116,7 +134,12 @@ const appRouter = createBrowserRouter([
                 path: "/resturants/:resId",
                 element: < Resturantmenu />
 
+            }, {
+
+                path: "/grocery",
+                element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
             }
+
         ],
         errorElement: <Error /> //? this is used to handle Error 
     },

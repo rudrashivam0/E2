@@ -1,31 +1,39 @@
 import React from 'react'
-import { useEffect, useState } from 'react';
 import Shimmer from './Shimmer';
 import { useParams } from 'react-router-dom';
 import { MENU_URL } from '../utils/constant';
 
+import  useResturantMenu  from '../utils/useResturantMenu'
+
 export const Resturantmenu = () => {
 
-    const [resInfo, setResInfo] = useState(null);
+    // const [resInfo, setResInfo] = useState(null);
 
     //? ResId extract from the useParem hook given by react 
     //? useParems give us OBject with resId 
-    const { resId } = useParams();
 
+    const { resId } = useParams();
     // console.log(parems)
 
-    useEffect(() => {
-        fetchMenu();
-    }, []);
 
-    const fetchMenu = async () => {
-        const data = await fetch(MENU_URL + resId);
+    // useEffect(() => {
+    //     fetchMenu();
+    // }, []);
 
-        const json = await data.json();
-        console.log(json);
-        setResInfo(json.data);
-        console.log(resInfo);
-    }
+
+
+    // const fetchMenu = async () => {
+    //     const data = await fetch(MENU_URL + resId);
+
+    //     const json = await data.json();
+    //     console.log(json);
+    //     setResInfo(json.data);
+    //     console.log(resInfo);
+    // }
+
+    const resInfo = useResturantMenu(resId);;
+
+
 
     //? Very IMportant BCZ we have to check if the data is null or not first 
     if (resInfo === null) {

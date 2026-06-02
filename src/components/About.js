@@ -15,7 +15,7 @@ class About extends Component {
     componentDidMount() {
         // console.log("Parent componentDidMount is called");
 
-        
+
     }
 
 
@@ -25,12 +25,14 @@ class About extends Component {
             <div>
                 <h1>About Class componrnt</h1>
                 <h2>This is all about the About Section </h2>
-                <UserClass name={"Rudra (Class)"} location={"Varanasi (Clss Based)"} />
+                <UserClass name={"First (Class)"} location={"Varanasi (Clss Based)"} />
 
                 {/* <UserClass2 name={"Rudra (Class)"} location={"Varanasi (Clss Based)"} /> */}
 
                 {/* 
                 <UserClass name={"Elon Musk (Class)"} location={"US (Clss Based)"} /> */}
+
+                <User name={"Rahul Singh"} />
 
 
             </div>
