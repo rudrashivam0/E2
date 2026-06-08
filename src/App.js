@@ -18,6 +18,7 @@ import ContactUs from "./components/ContactUs";
 import Error from "./components/Error";
 
 import Resturantmenu from "./components/Resturantmenu";
+
 // import Grocery from "./components/Grocery";
 import { lazy, Suspense } from "react";
 
@@ -29,13 +30,19 @@ import { lazy, Suspense } from "react";
 //? Dynamic Import
 //? 
 
-const Grocery = React.lazy(() => {
-    return import("./components/Grocery")
 
+//! React.lazy should be declared outside the component.
+//! If declared inside the component, a new lazy component is created on every render,
+//! causing React to reset its state and potentially re-trigger loading.
+//! Imports are cached by the browser/bundler, so the file is not downloaded again,
+//! but creating the lazy component inside the render function is inefficient.
+
+const Grocery = lazy(() => {
+    return import("./components/Grocery")
 })
 
 const About = lazy(() => {
-    return import("./components/About") 
+    return import("./components/About")
 })
 /**
  * //!
@@ -137,7 +144,10 @@ const appRouter = createBrowserRouter([
             }, {
 
                 path: "/grocery",
-                element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
+                element: <Suspense fallback={
+                    <h1>Loading..........
+
+                    </h1>}><Grocery /></Suspense>
             }
 
         ],

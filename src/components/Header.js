@@ -7,6 +7,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 const Header = () => {
     let btnName = "login"
 
+    //? import the custom hook as a function   this will do the online off line status in browser like tick as online 
     const onlineStatus = useOnlineStatus();
 
     const [btnNameReact, setbtnName] = useState("Login");
