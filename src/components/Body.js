@@ -143,21 +143,21 @@ const Body = () => {
     return resturantList.length === 0 ? (<Shimmer />) : (
         <div className="body-Cont">
 
-            <div className="filter">
+            <div className="flex ">
 
                 {/* <input type="text" placeholder="Search food"></input>
                 <button>Search</button> */}
 
-                <div className='serch-cont'>
+                <div className='m-2 p-2 gap-4 flex'>
 
-                    <input type='text' className='search-box' placeholder='Search For Restaurant'
+                    <input type='text' className='search-box border border-solid border-black rounded-md bg-white' placeholder='Search For Restaurant'
                         value={searchText} onChange={(e) => {
                             setSearchText(e.target.value);
                         }} ></input>
 
                     {/* // onClick filter out card and update the UI */}
 
-                    <button className='btn-2' onClick={() => {
+                    <button className='bg-green-200 px-4 py-1 rounded-md hover:bg-green-300 cursor-pointer' onClick={() => {
                         // Need to filter the data
 
                         const filteredRest = resturantList.filter((res) => {
@@ -173,25 +173,28 @@ const Body = () => {
 
                 </div>
 
-                <button className='Top-reted-res' onClick={() => {
+                <div className='m-2 p-2 gap-4 flex'>
+                    <button className='bg-green-200 px-4 py-1 rounded-md hover:bg-green-300 cursor-pointer' onClick={() => {
 
-                    const currRes = resturantList.filter(
-                        (res) => res.info.avgRating > 4.5);
-                    setFilteredResturant(currRes);
-                }}
+                        const currRes = resturantList.filter(
+                            (res) => res.info.avgRating > 4.5);
+                        setFilteredResturant(currRes);
+                    }}
 
 
-                // onMouseOver={() => {
+                    // onMouseOver={() => {
 
-                // }}
-                >
-                    Top Rated Restaurants
-                </button>
+                    // }}
+                    >
+                        Top Rated Restaurants
+                    </button>
+                </div>
+
 
 
             </div>
 
-            <div className="res-Cont">
+            <div className="mx-7 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 gap-y-12 ">
 
                 {/* //? Restaurant card */}
                 {/* <RestaurantCard resData={resList[1]} />

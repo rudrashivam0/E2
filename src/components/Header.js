@@ -25,15 +25,14 @@ const Header = () => {
 
 
     return (
-        <div className="header">
+        <div className='flex justify-between bg-pink-100 shadow-md  rounded-md'>
             {/* //logo */}
-            <div className="logo">
-                <img src={LOGO_URL} alt="Image "></img>
+            <div className='w-23 rounded-b-full'>
+                <img src={LOGO_URL} alt="Image " className="rounded-md"></img>
             </div>
-            <div className="nav-items">
 
-
-                <ul className="lists">
+            <div className='flex flex-col  justify-center align-center' >
+                <ul className='p-6 mr-3 gap-8 flex justify-center items-center'>
                     {/* <li><a href="/"> Home </a></li> */}
 
                     <li>Online Status : {onlineStatus ? "🟢" : "🔴"}</li>
@@ -53,15 +52,17 @@ const Header = () => {
 
                     <li>Cart</li>
 
-                    <button className="login-btn" onClick={() => {
-                        // btnName = "logout"
-                        btnNameReact === "Login" ? setbtnName("Logout") :
-                            setbtnName("Login")
-                        // console.log(btnNameReact)
-                    }}
-                    >
-                        {btnNameReact}
-                    </button>
+                    <li>
+                        <button className='bg-red-200 w-20 h-10 rounded-md  hover:cursor-pointer' onClick={() => {
+                            // btnName = "logout"
+                            btnNameReact === "Login" ? setbtnName("Logout") :
+                                setbtnName("Login")
+                            // console.log(btnNameReact)
+                        }}
+                        >
+                            {btnNameReact}
+                        </button>
+                    </li>
 
                 </ul>
             </div>

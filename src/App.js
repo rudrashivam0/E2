@@ -95,7 +95,7 @@ const About = lazy(() => {
 
 const AppLayout = () => {
     return (
-        <div className="app">
+        <div className="app" className='bg-red-500 w-full'>
             {/* //HAeader */}
             {/* <Header /> */}
             {/* {Header()}
