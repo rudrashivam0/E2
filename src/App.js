@@ -109,14 +109,18 @@ const AppLayout = () => {
     }, []);
 
     return (
-        <UserContext.Provider value={{ loggedInUser: userName }}>
+        //! Default useer 
+
+        <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+            {/* //!userName */}
             <div className="app" className='bg-slate-300  w-full min-h-screen'>
                 {/* //HAeader */}
                 {/* <Header /> */}
                 {/* {Header()}
             {Body()} */}
 
-                <UserContext.Provider value={{loggedInUser: "Prashant " }}>
+                <UserContext.Provider value={{ loggedInUser: "Prashant " }}>
+                    {/* //!Prashant */}
                     <Header />
                 </UserContext.Provider>
 

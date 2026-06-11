@@ -9,6 +9,7 @@ import useOnlineStatus from '../utils/useOnlineStatus'
 
 import useAllResturant from '../utils/useAllResturant'
 import UserContext from '../utils/UserContext'
+import { useContext } from 'react'
 
 
 
@@ -60,6 +61,8 @@ import UserContext from '../utils/UserContext'
 // ];
 
 const Body = () => {
+
+
 
     // console.log("functions ",useAllResturant);
 
@@ -144,6 +147,7 @@ const Body = () => {
         return <h1>Looks like you are offline !! Please check your internet connection</h1>
     }
 
+    const { loggedInUser, setUserName } = useContext(UserContext);
 
     return resturantList.length === 0 ? (<Shimmer />) : (
         <div className="body-Cont">
@@ -196,14 +200,24 @@ const Body = () => {
                 </div>
 
 
+                <div className='m-2 p-2 gap-4 '>
+                    <label>UserName: </label>
+                    <input className='p-1 border border-gray-400 rounded-md'
+                        value={loggedInUser}
+                        onChange={(e) => setUserName(e.target.value)}
+                    />
+
+                </div>
+
+
 
             </div>
 
-            <UserContext.Provider value={{ loggedInUser: "Harsh Kumar" }}>
-                <div className="mx-7 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 gap-y-12 ">
 
-                    {/* //? Restaurant card */}
-                    {/* <RestaurantCard resData={resList[1]} />
+            <div className="mx-7 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 gap-y-12 ">
+
+                {/* //? Restaurant card */}
+                {/* <RestaurantCard resData={resList[1]} />
                 <RestaurantCard resData={resList[0]} />
                 <RestaurantCard resData={resList[2]} />
                 <RestaurantCard resData={resList[3]} />
@@ -217,31 +231,31 @@ const Body = () => {
                 <RestaurantCard resData={resList[11]} /> */}
 
 
-                    {
-                        filteredResturant.map((restaurant) => {
+                {
+                    filteredResturant.map((restaurant) => {
 
-                            const isPromoted = null;
+                        const isPromoted = null;
 
-                            return (
-                                <Link
-                                    className="res-link"
-                                    to={"/resturants/" + restaurant.info.id}
-                                    key={restaurant?.info?.id}
-                                >
-                                    {
-                                        isPromoted ? (
-                                            <ResturantCardPromot resData={restaurant} />
-                                        ) : (
-                                            <RestaurantCard resData={restaurant} />
-                                        )
-                                    }
-                                </Link>
-                            );
-                        })
-                    }
+                        return (
+                            <Link
+                                className="res-link"
+                                to={"/resturants/" + restaurant.info.id}
+                                key={restaurant?.info?.id}
+                            >
+                                {
+                                    isPromoted ? (
+                                        <ResturantCardPromot resData={restaurant} />
+                                    ) : (
+                                        <RestaurantCard resData={restaurant} />
+                                    )
+                                }
+                            </Link>
+                        );
+                    })
+                }
 
-                </div>
-            </UserContext.Provider>
+            </div>
+
         </div>
     )
 
