@@ -1,7 +1,13 @@
+import { useContext } from "react";
 import { CDN_URL } from "../utils/constant";
-//? ABOVE is the name import 
+//? ABOVE is the name import
+import UserContext from "../utils/UserContext";
 
 const RestaurantCard = (props) => {
+
+    const { loggedInUser } = useContext(UserContext);
+
+
     const { resData } = props;
 
     const {
@@ -29,12 +35,21 @@ const RestaurantCard = (props) => {
                     cloudinaryImageId
                 }
             />
-            <h4>{name}</h4>
-            <h4>{cuisines?.join(", ")}</h4>
+            <h4 className="text-sm truncate">
+                {(name).split(" ").slice(0, 7).join(" ")}
+            </h4>
+            <h4 className="text-gray-600 text-sm truncate">
+                {cuisines?.join(", ")}
+            </h4>
             <h4>{avgRating}</h4>
             <h4>{costForTwo}</h4>
             <h4>{sla?.deliveryTime} min</h4>
             {/* <h3>{locality} </h3> */}
+
+            <h1>
+                {loggedInUser}
+            </h1>
+
 
 
 
@@ -52,6 +67,20 @@ const RestaurantCard = (props) => {
 
         </div>
     )
+}
+
+//? HIgher Or der Component 
+//! input  -> ResturantCard ==> ResturantCard Promoted 
+
+export const withPromot = (RestaurantCard) => {
+    return (props) => {
+        return (
+            <div>
+                <label>Promoted</label>
+                <RestaurantCard {...props} />
+            </div>
+        )
+    }
 }
 
 export default RestaurantCard

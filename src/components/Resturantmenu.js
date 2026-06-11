@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Shimmer from './Shimmer';
 import { useParams } from 'react-router-dom';
 import { MENU_URL } from '../utils/constant';
 
-import  useResturantMenu  from '../utils/useResturantMenu'
+import useResturantMenu from '../utils/useResturantMenu'
+import ResCategories from "./ResCategories"
+
+
+
 
 export const Resturantmenu = () => {
+
+    const [showIndex, setShowIndex] = useState(null);
 
     // const [resInfo, setResInfo] = useState(null);
 
@@ -49,40 +55,40 @@ export const Resturantmenu = () => {
     const { itemCards } = resInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card
         ?.card;
 
-    console.log(itemCards);
+    // console.log(itemCards);
 
     // console.log(itemCards[0].card.info.name);
+    // console.log(resInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
 
+    //?filter out recomended items categories 
+    const categories = resInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(c => c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
+
+
+    // console.log("Cate", categories);
 
     return (
 
-        <div className='menu'>
-            <h1>
+        <div className='text-center '>
+            <h1 className='font-bold my-10 text-2xl'>
                 {name}
             </h1>
-            <h3>
+            <h3 className='font-bold text-lg'>
                 {cuisines.join(" || ")}
             </h3>
-            <h3>
-                {costForTwoMessage}
-            </h3>
-            <h2>Menu</h2>
 
-            <ul>
-                {/* <li>{itemCards[0].card.info.name}</li>
-                <li>{itemCards[1].card.info.name} </li>
-                <li>{itemCards[2].card.info.name}</li> */}
+            {
+                // This is called controlled componrnt means its controlled the child components 
+                categories.map((c, index) => {
+                    return <ResCategories key={c?.card?.card?.categoryId} data={c?.card?.card}
+                        showItems = {index === showIndex ? true : false}
+                        setShowIndex={() => 
+                            setShowIndex(showIndex === index ? null : index)
+                        } />
+                })
+            }
 
-                {
-                    itemCards?.map((item) => {
-                        return (
-                            <li key={item.card.info.id}>
-                                {item.card.info.name} - ₹ {item.card.info.price / 100}
-                            </li>
-                        )
-                    })
-                }
-            </ul>
+
+
         </div>
     )
 }

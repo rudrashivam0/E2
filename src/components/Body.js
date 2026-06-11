@@ -1,5 +1,5 @@
 import React from 'react'
-import RestaurantCard from './ResturantCard'
+import RestaurantCard, { withPromot } from './ResturantCard'
 import resList from '../utils/mock_data'
 import Shimmer from './Shimmer'
 import { Link } from 'react-router-dom'
@@ -8,6 +8,8 @@ import { useState, useEffect } from 'react'
 import useOnlineStatus from '../utils/useOnlineStatus'
 
 import useAllResturant from '../utils/useAllResturant'
+import UserContext from '../utils/UserContext'
+
 
 
 //! state variable  -> super power variable 
@@ -67,11 +69,14 @@ const Body = () => {
     // const [resturantList, setListResturant] = useState([]);
 
     const resturantList = useAllResturant();
-    console.log("resturantList ", resturantList);
+    // console.log("resturantList ", resturantList);
 
     const [filteredResturant, setFilteredResturant] = useState([]);
 
     const [searchText, setSearchText] = useState("");
+
+    //? withPromot is a high order function return promoted lable 
+    const ResturantCardPromot = withPromot(RestaurantCard);
 
     // const [resturantList, setListResturant] = useState([
     //     {
@@ -150,7 +155,7 @@ const Body = () => {
 
                 <div className='m-2 p-2 gap-4 flex'>
 
-                    <input type='text' className='search-box border border-solid border-black rounded-md bg-white' placeholder='Search For Restaurant'
+                    <input type='text' className='search-box border border-solid border-black rounded-md bg-white  ' placeholder='Search For Restaurant'
                         value={searchText} onChange={(e) => {
                             setSearchText(e.target.value);
                         }} ></input>
@@ -164,7 +169,7 @@ const Body = () => {
                             //convert both of them into lower case pleade 
                             return res.info.name.toLowerCase().includes(searchText.toLowerCase())
                         });
-                        console.log(searchText);
+                        // console.log(searchText);
 
                         // setListResturant(filteredRest);
                         setFilteredResturant(filteredRest);
@@ -194,10 +199,11 @@ const Body = () => {
 
             </div>
 
-            <div className="mx-7 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 gap-y-12 ">
+            <UserContext.Provider value={{ loggedInUser: "Harsh Kumar" }}>
+                <div className="mx-7 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 gap-y-12 ">
 
-                {/* //? Restaurant card */}
-                {/* <RestaurantCard resData={resList[1]} />
+                    {/* //? Restaurant card */}
+                    {/* <RestaurantCard resData={resList[1]} />
                 <RestaurantCard resData={resList[0]} />
                 <RestaurantCard resData={resList[2]} />
                 <RestaurantCard resData={resList[3]} />
@@ -211,13 +217,31 @@ const Body = () => {
                 <RestaurantCard resData={resList[11]} /> */}
 
 
-                {
-                    filteredResturant.map((restaurant, index) => (
-                        <Link className="res-link" to={"/resturants/" + restaurant.info.id} key={restaurant?.info?.id} > <RestaurantCard resData={restaurant} /></Link>
+                    {
+                        filteredResturant.map((restaurant) => {
 
-                    ))}
+                            const isPromoted = null;
 
-            </div>
+                            return (
+                                <Link
+                                    className="res-link"
+                                    to={"/resturants/" + restaurant.info.id}
+                                    key={restaurant?.info?.id}
+                                >
+                                    {
+                                        isPromoted ? (
+                                            <ResturantCardPromot resData={restaurant} />
+                                        ) : (
+                                            <RestaurantCard resData={restaurant} />
+                                        )
+                                    }
+                                </Link>
+                            );
+                        })
+                    }
+
+                </div>
+            </UserContext.Provider>
         </div>
     )
 

@@ -1,11 +1,13 @@
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
 //? imort of react touter in V6
 // import { createBrowserRouter } from "react-router-dom";
 //? imort of react touter in V7
+
+import UserContext from "./utils/UserContext";
 import {
     createBrowserRouter,
     RouterProvider,
@@ -94,26 +96,36 @@ const About = lazy(() => {
 
 
 const AppLayout = () => {
+
+    const [userName, setUserName] = useState();
+
+    // Authentication 
+    useEffect(() => {
+        //MAke an API call to send the user name and pass
+        const data = {
+            name: "Rudra Shivam",
+        }
+        setUserName(data.name);
+    }, []);
+
     return (
-        <div className="app" className='bg-red-500 w-full'>
-            {/* //HAeader */}
-            {/* <Header /> */}
-            {/* {Header()}
+        <UserContext.Provider value={{ loggedInUser: userName }}>
+            <div className="app" className='bg-slate-300  w-full min-h-screen'>
+                {/* //HAeader */}
+                {/* <Header /> */}
+                {/* {Header()}
             {Body()} */}
 
-            <Header />
+                <UserContext.Provider value={{loggedInUser: "Prashant " }}>
+                    <Header />
+                </UserContext.Provider>
 
-            {/* if path is = / then body  */}
+                <Outlet />
 
-            {/* if path is = about  then about  */}
-
-            {/* if path is = contact then contact   */}
-
-            <Outlet />
-
-            {/* <Body /> */}
-            {/* // Body  */}
-        </div>
+                {/* <Body /> */}
+                {/* // Body  */}
+            </div>
+        </UserContext.Provider>
     )
 }
 

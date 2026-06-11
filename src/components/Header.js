@@ -3,9 +3,16 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
+
+
 
 const Header = () => {
     let btnName = "login"
+    //! Context in react 
+    const {loggedInUser} = useContext(UserContext);
+    // console.log(loggedInUser);
 
     //? import the custom hook as a function   this will do the online off line status in browser like tick as online 
     const onlineStatus = useOnlineStatus();
@@ -53,7 +60,7 @@ const Header = () => {
                     <li>Cart</li>
 
                     <li>
-                        <button className='bg-red-200 w-20 h-10 rounded-md  hover:cursor-pointer' onClick={() => {
+                        <button className='bg-red-200 w-20 h-10 rounded-md  cursor-pointer hover:bg-red-300 ' onClick={() => {
                             // btnName = "logout"
                             btnNameReact === "Login" ? setbtnName("Logout") :
                                 setbtnName("Login")
@@ -63,6 +70,9 @@ const Header = () => {
                             {btnNameReact}
                         </button>
                     </li>
+
+                    <li className="px-1 font-bold">{loggedInUser}</li>
+
 
                 </ul>
             </div>
