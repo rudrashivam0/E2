@@ -26,6 +26,7 @@ import { lazy, Suspense } from "react";
 //? Learn Bout the Redux and build the app
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import Cart from "./components/Cart";
 
 //? Chunking
 //? Code Splitting
@@ -113,7 +114,7 @@ const AppLayout = () => {
     return (
 
         <Provider store={appStore} >
-            //! Default useer
+            {/* //! Default useer */}
             <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
                 {/* //!userName */}
                 <div className="app" className='bg-slate-300  w-full min-h-screen'>
@@ -161,7 +162,12 @@ const appRouter = createBrowserRouter([
                 path: "/resturants/:resId",
                 element: < Resturantmenu />
 
-            }, {
+            },
+            {
+                path: "/cart",
+                element: <Cart />
+            },
+            {
 
                 path: "/grocery",
                 element: <Suspense fallback={

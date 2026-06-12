@@ -5,13 +5,13 @@ import { Link } from "react-router-dom"
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useContext } from "react";
 import UserContext from "../utils/UserContext";
-
+import { useSelector } from 'react-redux'
 
 
 const Header = () => {
     let btnName = "login"
     //! Context in react 
-    const {loggedInUser} = useContext(UserContext);
+    const { loggedInUser } = useContext(UserContext);
     // console.log(loggedInUser);
 
     //? import the custom hook as a function   this will do the online off line status in browser like tick as online 
@@ -31,6 +31,12 @@ const Header = () => {
     }, [btnNameReact])
 
 
+    //! selector is hust a hook and a hook is just a normal JS Function 
+    //? Susbcribing the dtore using the selector 
+    const cartItems = useSelector((store) => store.Cart.items);
+    console.log(cartItems);
+
+    
     return (
         <div className='flex justify-between bg-pink-100 shadow-md  rounded-md'>
             {/* //logo */}
@@ -57,7 +63,11 @@ const Header = () => {
                     <li><Link to="/contact">Contact Us</Link></li>
                     <li><Link to="/grocery">Grocery Stoore</Link></li>
 
-                    <li>Cart</li>
+                    <li className="font-bold text-xl">
+                        
+                        <Link to="/cart">Cart({cartItems.length})</Link>
+                    </li>
+
 
                     <li>
                         <button className='bg-red-200 w-20 h-10 rounded-md  cursor-pointer hover:bg-red-300 ' onClick={() => {

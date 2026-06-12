@@ -1,8 +1,19 @@
 import React, { useContext } from 'react'
 import { CDN_URL } from '../utils/constant';
-
+import { useDispatch } from 'react-redux';
+import { addItem, removeItem, clearCart } from '../utils/cartSlice';
 
 const ItemList = ({ items }) => {
+
+
+    const dispatch = useDispatch();
+    const handleCart = (item) => {
+        //? when some on click nee to dispatch an action 
+        //? dispatch an action to the store
+        dispatch(addItem(item));
+
+    }
+
 
 
     // console.log(items);
@@ -29,7 +40,7 @@ const ItemList = ({ items }) => {
 
                     <div className='relative'>
 
-                        <button className='px-2 py-1 bg-gray-300 shadow-lg  rounded-lg absolute bottom-1 right-1 hover:bg-green-300 transition-all duration-300 cursor-pointer'>
+                        <button className='px-2 py-1 bg-gray-300 shadow-lg  rounded-lg absolute bottom-1 right-1 hover:bg-green-300 transition-all duration-300 cursor-pointer' onClick={() => handleCart(item)}>
                             Add +
                         </button>
 

@@ -1,6 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 import React from 'react'
 
+
+//! createSlice() ==> thsi function is return A Big Object to the <== cartSlice
 const cartSlice = createSlice({
     name: 'cart',
     initialState: {
@@ -9,6 +11,7 @@ const cartSlice = createSlice({
     },
     reducers: {
         addItem: (state, action) => {
+            //! mutating state here 
             state.items.push(action.payload);
         },
         removeItem: (state, action) => {
