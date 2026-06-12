@@ -23,7 +23,9 @@ import Resturantmenu from "./components/Resturantmenu";
 
 // import Grocery from "./components/Grocery";
 import { lazy, Suspense } from "react";
-
+//? Learn Bout the Redux and build the app
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 //? Chunking
 //? Code Splitting
@@ -109,27 +111,29 @@ const AppLayout = () => {
     }, []);
 
     return (
-        //! Default useer 
 
-        <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
-            {/* //!userName */}
-            <div className="app" className='bg-slate-300  w-full min-h-screen'>
-                {/* //HAeader */}
-                {/* <Header /> */}
-                {/* {Header()}
+        <Provider store={appStore} >
+            //! Default useer
+            <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+                {/* //!userName */}
+                <div className="app" className='bg-slate-300  w-full min-h-screen'>
+                    {/* //HAeader */}
+                    {/* <Header /> */}
+                    {/* {Header()}
             {Body()} */}
 
-                <UserContext.Provider value={{ loggedInUser: "Prashant " }}>
-                    {/* //!Prashant */}
-                    <Header />
-                </UserContext.Provider>
+                    <UserContext.Provider value={{ loggedInUser: "Prashant " }}>
+                        {/* //!Prashant */}
+                        <Header />
+                    </UserContext.Provider>
 
-                <Outlet />
+                    <Outlet />
 
-                {/* <Body /> */}
-                {/* // Body  */}
-            </div>
-        </UserContext.Provider>
+                    {/* <Body /> */}
+                    {/* // Body  */}
+                </div>
+            </UserContext.Provider>
+        </Provider>
     )
 }
 
