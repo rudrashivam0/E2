@@ -11,6 +11,11 @@ const cartSlice = createSlice({
     },
     reducers: {
         addItem: (state, action) => {
+            //? Vanialla (older way) Redux => DON'T MUTATE STATE
+            //? const newItems = [...state];
+            //? newItems.push(action.payload);
+            //? return state
+
             //! mutating state here 
             state.items.push(action.payload);
         },

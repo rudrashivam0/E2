@@ -65,7 +65,7 @@ const Header = () => {
 
                     <li className="font-bold text-xl">
                         
-                        <Link to="/cart">Cart({cartItems.length})</Link>
+                        <Link to="/cart">Cart-({cartItems.length})</Link>
                     </li>
 
 
