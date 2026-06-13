@@ -16,6 +16,11 @@ const cartSlice = createSlice({
             //? newItems.push(action.payload);
             //? return state
 
+
+
+            //? But redux toolkit  bechind the seen do the same mutation and return the new state, WE NOT NEED TO TAKE CARE OF THIS OR THAT 
+            //? REDUX TOOL KIT USESE IMMEER JS BEHIND THE SEEN
+            
             //! mutating state here 
             state.items.push(action.payload);
         },
