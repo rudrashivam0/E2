@@ -32,5 +32,10 @@ const accordianHeader = screen.getByText("Croissants & Viennoiserie (15)");
 fireEvent.click(accordianHeader);
 expect(screen.getAllByTestId("foodDetail").length).toBe(15);
 
+const addBtn = screen.getAllByRole("button", { name: "Add +" });
+console.log(addBtn.length);
+fireEvent.click(addBtn[0]);
+
+
 })
 
