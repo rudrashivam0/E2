@@ -72,6 +72,7 @@ const Body = () => {
     // const [resturantList, setListResturant] = useState([]);
 
     const resturantList = useAllResturant();
+
     // console.log("resturantList ", resturantList);
 
     const [filteredResturant, setFilteredResturant] = useState([]);
@@ -159,7 +160,7 @@ const Body = () => {
 
                 <div className='m-2 p-2 gap-4 flex'>
 
-                    <input type='text' className='search-box border border-solid border-black rounded-md bg-white  ' placeholder='Search For Restaurant'
+                    <input data-testid='searchBox' type='text' className='search-box border border-solid border-black rounded-md bg-white  ' placeholder='Search For Restaurant'
                         value={searchText} onChange={(e) => {
                             setSearchText(e.target.value);
                         }} ></input>
@@ -178,7 +179,7 @@ const Body = () => {
                         // setListResturant(filteredRest);
                         setFilteredResturant(filteredRest);
 
-                    }}>Search</button>
+                    }}>Search</button> 
 
                 </div>
 
@@ -234,7 +235,7 @@ const Body = () => {
                 {
                     filteredResturant.map((restaurant) => {
 
-                        const isPromoted = null;
+                        const isPromoted = null; 
 
                         return (
                             <Link

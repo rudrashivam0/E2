@@ -9,7 +9,7 @@ import ResCategories from "./ResCategories"
 
 
 
-export const Resturantmenu = () => {
+const Resturantmenu = () => {
 
     const [showIndex, setShowIndex] = useState(null);
 
@@ -68,7 +68,7 @@ export const Resturantmenu = () => {
 
     return (
 
-        <div className='text-center '>
+        <div className='text-center'>
             <h1 className='font-bold my-10 text-2xl'>
                 {name}
             </h1>
@@ -80,8 +80,8 @@ export const Resturantmenu = () => {
                 // This is called controlled componrnt means its controlled the child components 
                 categories.map((c, index) => {
                     return <ResCategories key={c?.card?.card?.categoryId} data={c?.card?.card}
-                        showItems = {index === showIndex ? true : false}
-                        setShowIndex={() => 
+                        showItems={index === showIndex ? true : false}
+                        setShowIndex={() =>
                             setShowIndex(showIndex === index ? null : index)
                         } />
                 })

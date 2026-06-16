@@ -34,7 +34,6 @@ const useAllResturant = () => {
         // console.log(resturantList)
     }, [])
 
-
     return allResturant;
 
 }

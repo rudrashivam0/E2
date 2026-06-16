@@ -29,9 +29,7 @@ const ResCategories = ({ data, showItems, setShowIndex }) => {
 
                 <div className='flex justify-between' onClick={handleClick}>
                     <span className='font-bold text-lg '>{data?.title} ({data?.itemCards.length})
-                        <span className='taxt-xs '>
-                            {loggedInUser}
-                        </span>
+
                     </span>
 
                     <span>⬇️</span>
@@ -39,15 +37,15 @@ const ResCategories = ({ data, showItems, setShowIndex }) => {
                 </div>
 
 
-                <motion.div
-                    initial={false}
-                    animate={{
-                        height: showItems ? "400px" : 0,
-                    }}
-                    className="overflow-y-auto"
-                >
-                    <ItemList items={data?.itemCards} />
-                </motion.div>
+                {showItems && (
+                    <motion.div
+                        initial={false}
+                        animate={{ height: "400px" }}
+                        className="overflow-y-auto"
+                    >
+                        <ItemList items={data?.itemCards} />
+                    </motion.div>
+                )}
 
             </div>
 

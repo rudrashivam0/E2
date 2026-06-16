@@ -18,7 +18,7 @@ const Header = () => {
     const onlineStatus = useOnlineStatus();
 
     const [btnNameReact, setbtnName] = useState("Login");
-    console.log("Header rendewred")
+    // console.log("Header rendewred")
 
     //? if there is no dependency array then useEffect is called on every render
 
@@ -34,9 +34,9 @@ const Header = () => {
     //! selector is hust a hook and a hook is just a normal JS Function 
     //? Susbcribing the dtore using the selector 
     const cartItems = useSelector((store) => store.Cart.items);
-    console.log(cartItems);
+    console.log(cartItems); 
 
-    
+
     return (
         <div className='flex justify-between bg-pink-100 shadow-md  rounded-md'>
             {/* //logo */}
@@ -64,7 +64,7 @@ const Header = () => {
                     <li><Link to="/grocery">Grocery Stoore</Link></li>
 
                     <li className="font-bold text-xl">
-                        
+
                         <Link to="/cart">Cart-({cartItems.length})</Link>
                     </li>
 
