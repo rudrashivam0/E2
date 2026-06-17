@@ -6,8 +6,9 @@ const CartItems = ({ items }) => {
     return (
         <div >
 
-            {items.map((item,index) => (
-                <div key={index } className='p-2 m-2 border-gray-300 border-b-2 text-left flex justify-between gap-4 '>
+            {items.map((item, index) => (
+                <div key={index} className='p-2 m-2 border-gray-300 border-b-2 text-left flex justify-between gap-4 '
+                    data-testid="foodCart">
                     <div className='pt-4 ' >
                         <span className='pr-4'>
                             {item.card.info.name}

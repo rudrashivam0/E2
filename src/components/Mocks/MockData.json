@@ -70,7 +70,7 @@
                                 "iconType": "ICON_TYPE_EMPTY"
                             },
                             "availability": {
-                                "nextCloseTime": "2026-06-17 02:00:00",
+                                "nextCloseTime": "2026-06-18 02:00:00",
                                 "visibility": true,
                                 "opened": true,
                                 "restaurantClosedMeta": {}
@@ -238,7 +238,6 @@
                             "featuredSectionInfo": {},
                             "timingsInfo": {
                                 "status": "Open now",
-                                "message": "Closes 2:00 am",
                                 "outletTiming": {
                                     "infoList": [
                                         {
@@ -502,6 +501,118 @@
                                                     "card": {
                                                         "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
                                                         "info": {
+                                                            "id": "169133867",
+                                                            "name": "Mango Tres Leches",
+                                                            "category": "Mad Over Mangoes!",
+                                                            "description": "A twist on the classic dessert, this tropical dessert is made with a light and fluffy sponge cake soaked in mango flavored milk, with chunks of fresh mango.\n\nAllergens: Milk, Wheat, Soy, Egg \n\nNutritional Information (Per 100g): Energy (Kcal): 200.83, Carbohydrate(g): 25.16, Protein(g): 3.58, Fat(g): 9.67\n\nServing Size: 210 g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/4/16/0d6393e0-ebc1-4e5b-acd9-a9e541a4727b_73fac1ee-818d-4463-848c-ba5d0f1357b5.png",
+                                                            "inStock": 1,
+                                                            "price": 36700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "NONVEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "showImage": true,
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "3.9",
+                                                                    "ratingCount": "3 ratings",
+                                                                    "ratingCountV2": "3"
+                                                                },
+                                                                "ratingsPresentationConfig": {
+                                                                    "bgGradient": {
+                                                                        "colours": [
+                                                                            "#D9EFEC",
+                                                                            "#00FFFFFF"
+                                                                        ],
+                                                                        "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                                                    },
+                                                                    "ratingIconColor": "rating_medium",
+                                                                    "ratingTextColor": "rating_medium",
+                                                                    "ratingCountTextColor": "rating_medium",
+                                                                    "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                                                    "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                                                }
+                                                            },
+                                                            "parentId": "102020982",
+                                                            "menuFilterIds": [
+                                                                "NONVEG"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "36700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "200789607",
+                                                            "name": "Fresh Mango Cream Pastry",
+                                                            "category": "Mad Over Mangoes!",
+                                                            "description": "Light sponge with mango custard cream, finished with cream piping and a fresh mango crown - indulgence in every bite! \n\nAllergens: Nuts, Milk, Soy\n\nNutritional Information (Per 100g): Energy (Kcal): 201.4, Protein(g): 2.5, Carbohydrate(g): 31.2, Fat(g): 7.8\n\nServing Size: 110g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/5/15/9ec5293e-0c6e-4b57-8cc7-798ac3c98e2f_d23511c0-e11a-4b8e-aa20-6026fea24825.png",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 19700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "showImage": true,
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.0",
+                                                                    "ratingCount": "1 rating",
+                                                                    "ratingCountV2": "1"
+                                                                },
+                                                                "ratingsPresentationConfig": {
+                                                                    "bgGradient": {
+                                                                        "colours": [
+                                                                            "#C8F9E5",
+                                                                            "#00FFFFFF"
+                                                                        ],
+                                                                        "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                                                    },
+                                                                    "ratingIconColor": "rating_very_good",
+                                                                    "ratingTextColor": "rating_very_good",
+                                                                    "ratingCountTextColor": "rating_very_good",
+                                                                    "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                                                    "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                                                }
+                                                            },
+                                                            "parentId": "122872460",
+                                                            "menuFilterIds": [
+                                                                "VEG",
+                                                                "toprated"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "19700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
                                                             "id": "198619265",
                                                             "name": "Mango Mascarpone Cake (1/2 Kg)",
                                                             "category": "Mad Over Mangoes!",
@@ -568,6 +679,83 @@
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
                                                                 "swiggy_listing_price": "89700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "198619274",
+                                                            "name": "Tropical Mango Bento Cake (350g)",
+                                                            "category": "Mad Over Mangoes!",
+                                                            "description": "Bento cake layered with mango diplomat cream, moist sponge and fresh mango, finished with a buttercream frosting and topped with fresh mango chunks. \n\nAllergens: Milk, Soy, Wheat, Sulphite\n\nNutritional Information (Per 100g): Energy (Kcal): 242.4, Carbohydrate(g): 34.4, Protein(g): 2.2, Fat(g): 10.7\n\nServing Size: 350g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/4/10/77e981f5-f000-4378-b941-3e146ecb785b_3e09bf6f-bb53-40ef-8c4a-abe9b1cc3d41.png_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 64700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "addons": [
+                                                                {
+                                                                    "groupId": "290621763",
+                                                                    "groupName": "Choose a msg:",
+                                                                    "choices": [
+                                                                        {
+                                                                            "id": "60884178",
+                                                                            "name": "Happy Birthday",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "60884179",
+                                                                            "name": "Happy Anniversary",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "60884192",
+                                                                            "name": "Congratulations",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "87611901",
+                                                                            "name": "Write your own message kit",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        }
+                                                                    ],
+                                                                    "maxAddons": 1,
+                                                                    "maxFreeAddons": -1
+                                                                }
+                                                            ],
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "defaultPrice": 64700,
+                                                            "ribbon": {},
+                                                            "showImage": true,
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            },
+                                                            "parentId": "121496352",
+                                                            "menuFilterIds": [
+                                                                "VEG"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "64700",
                                                                 "swiggy_final_price": "0"
                                                             }
                                                         },
@@ -682,10 +870,16 @@
                                                                 "vegClassifier": "VEG"
                                                             },
                                                             "defaultPrice": 29700,
-                                                            "ribbon": {},
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
                                                             "showImage": true,
                                                             "itemBadge": {},
                                                             "badgesV2": {},
+                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.8",
@@ -709,6 +903,7 @@
                                                             },
                                                             "parentId": "3597535",
                                                             "menuFilterIds": [
+                                                                "bestseller",
                                                                 "VEG",
                                                                 "toprated"
                                                             ],
@@ -1092,8 +1287,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_final_price": "0",
-                                                                "swiggy_listing_price": "31700"
+                                                                "swiggy_listing_price": "31700",
+                                                                "swiggy_final_price": "0"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -1150,16 +1345,10 @@
                                                                 "vegClassifier": "VEG"
                                                             },
                                                             "defaultPrice": 37700,
-                                                            "ribbon": {
-                                                                "text": "Bestseller",
-                                                                "textColor": "#ffffff",
-                                                                "topBackgroundColor": "#d53d4c",
-                                                                "bottomBackgroundColor": "#b02331"
-                                                            },
+                                                            "ribbon": {},
                                                             "showImage": true,
                                                             "itemBadge": {},
                                                             "badgesV2": {},
-                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.8",
@@ -1183,13 +1372,102 @@
                                                             },
                                                             "parentId": "3597549",
                                                             "menuFilterIds": [
-                                                                "bestseller",
                                                                 "VEG",
                                                                 "toprated"
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
                                                                 "swiggy_listing_price": "37700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "100460313",
+                                                            "name": "Biscoff Frangipane  Croissant",
+                                                            "category": "Croissants & Viennoiserie",
+                                                            "description": "Golden, flaky croissant filled with Biscoff almond frangipane, baked to perfection and finished with a drizzle of caramelized Biscoff.\n\nAllergens: Milk, Soy, Wheat, Nuts. \n \nNutritional Information (Per 100g): Energy(kcal): 572.4, Protein(g): 10.1, Carbohydrate(g): 47.3 , Fat(g): 39.4\nServing Size : 130g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/7/25/88d59c33-7b8a-4047-b93e-afcd986efa50_b7fe3f9c-f711-4160-9ae5-1236ae949a3f.png_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 31700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "addons": [
+                                                                {
+                                                                    "groupId": "289372137",
+                                                                    "groupName": "Best Paired with:",
+                                                                    "choices": [
+                                                                        {
+                                                                            "id": "147371814",
+                                                                            "name": "Hot Chocolate",
+                                                                            "price": 22700,
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "117038554",
+                                                                            "name": "Classic Cold Coffee",
+                                                                            "price": 22500,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "117038557",
+                                                                            "name": "Mocha Cold Coffee",
+                                                                            "price": 24700,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        }
+                                                                    ],
+                                                                    "maxAddons": 3,
+                                                                    "maxFreeAddons": -1
+                                                                }
+                                                            ],
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "defaultPrice": 31700,
+                                                            "ribbon": {},
+                                                            "showImage": true,
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.7",
+                                                                    "ratingCount": "5 ratings",
+                                                                    "ratingCountV2": "5"
+                                                                },
+                                                                "ratingsPresentationConfig": {
+                                                                    "bgGradient": {
+                                                                        "colours": [
+                                                                            "#C8F9E5",
+                                                                            "#00FFFFFF"
+                                                                        ],
+                                                                        "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                                                    },
+                                                                    "ratingIconColor": "rating_very_good",
+                                                                    "ratingTextColor": "rating_very_good",
+                                                                    "ratingCountTextColor": "rating_very_good",
+                                                                    "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                                                    "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                                                }
+                                                            },
+                                                            "parentId": "107539021",
+                                                            "menuFilterIds": [
+                                                                "VEG",
+                                                                "toprated"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "31700",
                                                                 "swiggy_final_price": "0"
                                                             }
                                                         },
@@ -1712,10 +1990,16 @@
                                                                 "vegClassifier": "NONVEG"
                                                             },
                                                             "defaultPrice": 34700,
-                                                            "ribbon": {},
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
                                                             "showImage": true,
                                                             "itemBadge": {},
                                                             "badgesV2": {},
+                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.0",
@@ -1745,6 +2029,7 @@
                                                             "parentId": "95544300",
                                                             "menuFilterIds": [
                                                                 "EATRIGHT",
+                                                                "bestseller",
                                                                 "NONVEG",
                                                                 "toprated"
                                                             ],
@@ -1846,8 +2131,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_final_price": "0",
-                                                                "swiggy_listing_price": "34700"
+                                                                "swiggy_listing_price": "34700",
+                                                                "swiggy_final_price": "0"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -1948,90 +2233,68 @@
                                                         "analytics": {},
                                                         "hideRestaurantDetails": true
                                                     }
-                                                },
+                                                }
+                                            ],
+                                            "type": "CATEGORY_TYPE_RECOMMENDED",
+                                            "subtitleSuffix": {},
+                                            "categoryId": "-1"
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Mad Over Mangoes!",
+                                            "itemCards": [
                                                 {
                                                     "card": {
                                                         "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
                                                         "info": {
-                                                            "id": "70183561",
-                                                            "name": "Classic French Butter Croissant",
-                                                            "category": "Croissants & Viennoiserie",
-                                                            "description": "Bite Into The Golden Crust Of This Warm Croissant And Savor The Soft, Buttery, Flakiness Inside.\n\nAllergens: Wheat, Milk\n\nNutritional Information( Per 100g):Energy (kcal):328.19,Protein (g)9.1,Carbohydrate (g)15.76,Fat (g)24.57,\n\nServing Size: 60g",
-                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/7/15/056b3394-0249-452d-b132-85371e495a00_be067d08-2590-49de-90dc-50e8f6c541c0.png",
+                                                            "id": "169133867",
+                                                            "name": "Mango Tres Leches",
+                                                            "category": "Mad Over Mangoes!",
+                                                            "description": "A twist on the classic dessert, this tropical dessert is made with a light and fluffy sponge cake soaked in mango flavored milk, with chunks of fresh mango.\n\nAllergens: Milk, Wheat, Soy, Egg \n\nNutritional Information (Per 100g): Energy (Kcal): 200.83, Carbohydrate(g): 25.16, Protein(g): 3.58, Fat(g): 9.67\n\nServing Size: 210 g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/4/16/0d6393e0-ebc1-4e5b-acd9-a9e541a4727b_73fac1ee-818d-4463-848c-ba5d0f1357b5.png",
                                                             "inStock": 1,
-                                                            "isVeg": 1,
-                                                            "price": 17000,
+                                                            "price": 36700,
                                                             "variants": {},
                                                             "variantsV2": {},
-                                                            "addons": [
-                                                                {
-                                                                    "groupId": "289372292",
-                                                                    "groupName": "Best Paired with:",
-                                                                    "choices": [
-                                                                        {
-                                                                            "id": "147371814",
-                                                                            "name": "Hot Chocolate",
-                                                                            "price": 22700,
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "117038554",
-                                                                            "name": "Classic Cold Coffee",
-                                                                            "price": 22500,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "117038557",
-                                                                            "name": "Mocha Cold Coffee",
-                                                                            "price": 24700,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        }
-                                                                    ],
-                                                                    "maxAddons": 3,
-                                                                    "maxFreeAddons": -1
-                                                                }
-                                                            ],
                                                             "itemAttribute": {
-                                                                "vegClassifier": "VEG"
+                                                                "vegClassifier": "NONVEG"
                                                             },
-                                                            "defaultPrice": 17000,
                                                             "ribbon": {},
-                                                            "showImage": true,
+                                                            "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
                                                             "ratings": {
                                                                 "aggregatedRating": {
-                                                                    "rating": "4.9",
-                                                                    "ratingCount": "65 ratings",
-                                                                    "ratingCountV2": "65"
+                                                                    "rating": "3.9",
+                                                                    "ratingCount": "3 ratings",
+                                                                    "ratingCountV2": "3"
                                                                 },
                                                                 "ratingsPresentationConfig": {
                                                                     "bgGradient": {
                                                                         "colours": [
-                                                                            "#C8F9E5",
+                                                                            "#D9EFEC",
                                                                             "#00FFFFFF"
                                                                         ],
                                                                         "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
                                                                     },
-                                                                    "ratingIconColor": "rating_very_good",
-                                                                    "ratingTextColor": "rating_very_good",
-                                                                    "ratingCountTextColor": "rating_very_good",
+                                                                    "ratingIconColor": "rating_medium",
+                                                                    "ratingTextColor": "rating_medium",
+                                                                    "ratingCountTextColor": "rating_medium",
                                                                     "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
                                                                     "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
                                                                 }
                                                             },
-                                                            "parentId": "3597534",
+                                                            "parentId": "102020982",
                                                             "menuFilterIds": [
-                                                                "VEG",
-                                                                "toprated"
+                                                                "NONVEG"
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "17000",
+                                                                "swiggy_listing_price": "36700",
                                                                 "swiggy_final_price": "0"
                                                             }
                                                         },
@@ -2043,65 +2306,26 @@
                                                     "card": {
                                                         "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
                                                         "info": {
-                                                            "id": "198619187",
-                                                            "name": "Mango Mascarpone Cake (500g)",
-                                                            "category": "Cakes",
-                                                            "description": "Luscious flavors of fresh mangoes and creamy mascarpone, made with layers of moist vanilla sponge cake and filled with a rich mango mascarpone cream.\n\nAllergens: Wheat, Milk, Soy\n\nNutritional Information (Per 100g): Energy (Kcal): 251.97, Carbohydrate(g): 33.37, Protein(g): 2.25, Fat(g): 12.11\n\nServing Size: 600g",
-                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/4/10/3d9bb0be-8807-4440-8346-65fa5899a8f0_78a2741b-59d7-4bf6-94f2-b23b807cef7d.png",
+                                                            "id": "200789607",
+                                                            "name": "Fresh Mango Cream Pastry",
+                                                            "category": "Mad Over Mangoes!",
+                                                            "description": "Light sponge with mango custard cream, finished with cream piping and a fresh mango crown - indulgence in every bite! \n\nAllergens: Nuts, Milk, Soy\n\nNutritional Information (Per 100g): Energy (Kcal): 201.4, Protein(g): 2.5, Carbohydrate(g): 31.2, Fat(g): 7.8\n\nServing Size: 110g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/5/15/9ec5293e-0c6e-4b57-8cc7-798ac3c98e2f_d23511c0-e11a-4b8e-aa20-6026fea24825.png",
                                                             "inStock": 1,
                                                             "isVeg": 1,
-                                                            "price": 89700,
+                                                            "price": 19700,
                                                             "variants": {},
                                                             "variantsV2": {},
-                                                            "addons": [
-                                                                {
-                                                                    "groupId": "290621751",
-                                                                    "groupName": "Choose a msg:",
-                                                                    "choices": [
-                                                                        {
-                                                                            "id": "60884178",
-                                                                            "name": "Happy Birthday",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "60884179",
-                                                                            "name": "Happy Anniversary",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "60884192",
-                                                                            "name": "Congratulations",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "87611901",
-                                                                            "name": "Write your own message kit",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        }
-                                                                    ],
-                                                                    "maxAddons": 1,
-                                                                    "maxFreeAddons": -1
-                                                                }
-                                                            ],
                                                             "itemAttribute": {
                                                                 "vegClassifier": "VEG"
                                                             },
-                                                            "defaultPrice": 89700,
                                                             "ribbon": {},
-                                                            "showImage": true,
+                                                            "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
                                                             "ratings": {
                                                                 "aggregatedRating": {
-                                                                    "rating": "5.0",
+                                                                    "rating": "4.0",
                                                                     "ratingCount": "1 rating",
                                                                     "ratingCountV2": "1"
                                                                 },
@@ -2120,14 +2344,14 @@
                                                                     "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
                                                                 }
                                                             },
-                                                            "parentId": "121386814",
+                                                            "parentId": "122872460",
                                                             "menuFilterIds": [
                                                                 "VEG",
                                                                 "toprated"
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "89700",
+                                                                "swiggy_listing_price": "19700",
                                                                 "swiggy_final_price": "0"
                                                             }
                                                         },
@@ -2139,161 +2363,32 @@
                                                     "card": {
                                                         "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
                                                         "info": {
-                                                            "id": "173301043",
-                                                            "name": "Dutch Chocolate Truffle Cake [Eggless 500 gms]",
-                                                            "category": "Cakes",
-                                                            "description": "A rich, eggless chocolate sponge layered with Dutch truffle - decadent, indulgent and perfect for any celebration.\n\nAllergens : Milk, Wheat, Soy  \nNutritional Information (Per 100g): Energy(kcal): 326, Carbohydrate(g): 42.2, Protein(g): 2.7, Fat(g): 17.1\nServing Size : 500g",
-                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/6/3/5f64e0ab-74fb-40c7-b887-e538d0a537ee_e4ea31e8-f777-4e7a-a883-4e0f73450d2f.png_compressed",
+                                                            "id": "198619234",
+                                                            "name": "Mango Coconut Serradura Pudding",
+                                                            "category": "Mad Over Mangoes!",
+                                                            "description": "Creamy coconut mango mousse, amidst layers of mango pulp soaked sponge, textures of crumbly biscuit and topped with chunks of fresh mango\n\nAllergens: Wheat, Milk, Soy, Nuts, Sulphite\n\nNutritional Information (Per 100g): Energy (Kcal): 219.01, Carbohydrate(g): 28.19, Protein(g): 2.33, Fat(g): 10.99\n\nServing Size: 215g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/6/9/598430c0-3520-448f-9eda-f52bcd9bc383_75d249cf-6298-4dda-b2b4-2191dac01376.png",
                                                             "inStock": 1,
                                                             "isVeg": 1,
-                                                            "price": 69700,
+                                                            "price": 34700,
                                                             "variants": {},
                                                             "variantsV2": {},
-                                                            "addons": [
-                                                                {
-                                                                    "groupId": "224393461",
-                                                                    "groupName": "Choose a msg:",
-                                                                    "choices": [
-                                                                        {
-                                                                            "id": "60884178",
-                                                                            "name": "Happy Birthday",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "60884179",
-                                                                            "name": "Happy Anniversary",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "60884192",
-                                                                            "name": "Congratulations",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "87611901",
-                                                                            "name": "Write your own message kit",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        }
-                                                                    ],
-                                                                    "maxAddons": 1,
-                                                                    "maxFreeAddons": -1
-                                                                }
-                                                            ],
                                                             "itemAttribute": {
                                                                 "vegClassifier": "VEG"
                                                             },
-                                                            "defaultPrice": 69700,
-                                                            "ribbon": {},
-                                                            "showImage": true,
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
+                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
-                                                                    "rating": "5.0",
-                                                                    "ratingCount": "2 ratings",
-                                                                    "ratingCountV2": "2"
-                                                                },
-                                                                "ratingsPresentationConfig": {
-                                                                    "bgGradient": {
-                                                                        "colours": [
-                                                                            "#C8F9E5",
-                                                                            "#00FFFFFF"
-                                                                        ],
-                                                                        "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
-                                                                    },
-                                                                    "ratingIconColor": "rating_very_good",
-                                                                    "ratingTextColor": "rating_very_good",
-                                                                    "ratingCountTextColor": "rating_very_good",
-                                                                    "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
-                                                                    "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
-                                                                }
-                                                            },
-                                                            "parentId": "102073779",
-                                                            "menuFilterIds": [
-                                                                "VEG",
-                                                                "toprated"
-                                                            ],
-                                                            "priceComparisonComms": {},
-                                                            "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "69700",
-                                                                "swiggy_final_price": "0"
-                                                            }
-                                                        },
-                                                        "analytics": {},
-                                                        "hideRestaurantDetails": true
-                                                    }
-                                                },
-                                                {
-                                                    "card": {
-                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-                                                        "info": {
-                                                            "id": "121695594",
-                                                            "name": "Baked Blueberry Cheesecake",
-                                                            "category": "Cakes",
-                                                            "description": "Divine combination of creamy baked cheesecake and a burst of sweet - tart blueberries, nestled on a delicate graham cracker crust.\n\nAllergens: Milk, Wheat, Soy, Sulphite\n\nNutritional Information (Per 100g):Energy(kcal):238.37,Protein(g):7.55,Carbohydrate(g): 35.91,Fat(g):4.92\n\nServing Size: 630g",
-                                                            "imageId": "24b18aa9fd9f3a539c5cfc839c09ac16",
-                                                            "inStock": 1,
-                                                            "isVeg": 1,
-                                                            "price": 119700,
-                                                            "variants": {},
-                                                            "variantsV2": {},
-                                                            "addons": [
-                                                                {
-                                                                    "groupId": "168435482",
-                                                                    "groupName": "Choose a msg:",
-                                                                    "choices": [
-                                                                        {
-                                                                            "id": "60884178",
-                                                                            "name": "Happy Birthday",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "60884179",
-                                                                            "name": "Happy Anniversary",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "60884192",
-                                                                            "name": "Congratulations",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        },
-                                                                        {
-                                                                            "id": "87611901",
-                                                                            "name": "Write your own message kit",
-                                                                            "inStock": 1,
-                                                                            "isVeg": 1,
-                                                                            "isEnabled": 1
-                                                                        }
-                                                                    ],
-                                                                    "maxAddons": 1,
-                                                                    "maxFreeAddons": -1
-                                                                }
-                                                            ],
-                                                            "itemAttribute": {
-                                                                "vegClassifier": "VEG"
-                                                            },
-                                                            "defaultPrice": 119700,
-                                                            "ribbon": {},
-                                                            "showImage": true,
-                                                            "itemBadge": {},
-                                                            "badgesV2": {},
-                                                            "ratings": {
-                                                                "aggregatedRating": {
-                                                                    "rating": "5.0",
+                                                                    "rating": "4.8",
                                                                     "ratingCount": "3 ratings",
                                                                     "ratingCountV2": "3"
                                                                 },
@@ -2312,34 +2407,22 @@
                                                                     "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
                                                                 }
                                                             },
-                                                            "parentId": "69853877",
+                                                            "parentId": "121386812",
                                                             "menuFilterIds": [
+                                                                "bestseller",
                                                                 "VEG",
                                                                 "toprated"
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "119700",
+                                                                "swiggy_listing_price": "34700",
                                                                 "swiggy_final_price": "0"
                                                             }
                                                         },
                                                         "analytics": {},
                                                         "hideRestaurantDetails": true
                                                     }
-                                                }
-                                            ],
-                                            "type": "CATEGORY_TYPE_RECOMMENDED",
-                                            "subtitleSuffix": {},
-                                            "categoryId": "-1"
-                                        }
-                                    }
-                                },
-                                {
-                                    "card": {
-                                        "card": {
-                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
-                                            "title": "Mad Over Mangoes!",
-                                            "itemCards": [
+                                                },
                                                 {
                                                     "card": {
                                                         "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
@@ -2409,8 +2492,85 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_final_price": "0",
-                                                                "swiggy_listing_price": "89700"
+                                                                "swiggy_listing_price": "89700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "198619274",
+                                                            "name": "Tropical Mango Bento Cake (350g)",
+                                                            "category": "Mad Over Mangoes!",
+                                                            "description": "Bento cake layered with mango diplomat cream, moist sponge and fresh mango, finished with a buttercream frosting and topped with fresh mango chunks. \n\nAllergens: Milk, Soy, Wheat, Sulphite\n\nNutritional Information (Per 100g): Energy (Kcal): 242.4, Carbohydrate(g): 34.4, Protein(g): 2.2, Fat(g): 10.7\n\nServing Size: 350g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/4/10/77e981f5-f000-4378-b941-3e146ecb785b_3e09bf6f-bb53-40ef-8c4a-abe9b1cc3d41.png_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 64700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "addons": [
+                                                                {
+                                                                    "groupId": "290621763",
+                                                                    "groupName": "Choose a msg:",
+                                                                    "choices": [
+                                                                        {
+                                                                            "id": "60884178",
+                                                                            "name": "Happy Birthday",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "60884179",
+                                                                            "name": "Happy Anniversary",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "60884192",
+                                                                            "name": "Congratulations",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "87611901",
+                                                                            "name": "Write your own message kit",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        }
+                                                                    ],
+                                                                    "maxAddons": 1,
+                                                                    "maxFreeAddons": -1
+                                                                }
+                                                            ],
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "defaultPrice": 64700,
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            },
+                                                            "parentId": "121496352",
+                                                            "menuFilterIds": [
+                                                                "VEG"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "64700",
+                                                                "swiggy_final_price": "0"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -2476,7 +2636,7 @@
                                                 }
                                             ],
                                             "subtitleSuffix": {},
-                                            "image": "FOOD_CATALOG/IMAGES/CMS/2025/4/10/3d9bb0be-8807-4440-8346-65fa5899a8f0_78a2741b-59d7-4bf6-94f2-b23b807cef7d.png",
+                                            "image": "FOOD_CATALOG/IMAGES/CMS/2026/4/16/0d6393e0-ebc1-4e5b-acd9-a9e541a4727b_73fac1ee-818d-4463-848c-ba5d0f1357b5.png",
                                             "categoryId": "74008021"
                                         }
                                     }
@@ -2537,10 +2697,16 @@
                                                                 "vegClassifier": "VEG"
                                                             },
                                                             "defaultPrice": 29700,
-                                                            "ribbon": {},
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
                                                             "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
+                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.8",
@@ -2564,6 +2730,7 @@
                                                             },
                                                             "parentId": "3597535",
                                                             "menuFilterIds": [
+                                                                "bestseller",
                                                                 "VEG",
                                                                 "toprated"
                                                             ],
@@ -2857,8 +3024,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "19700",
-                                                                "swiggy_final_price": "0"
+                                                                "swiggy_final_price": "0",
+                                                                "swiggy_listing_price": "19700"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -3005,16 +3172,10 @@
                                                                 "vegClassifier": "VEG"
                                                             },
                                                             "defaultPrice": 37700,
-                                                            "ribbon": {
-                                                                "text": "Bestseller",
-                                                                "textColor": "#ffffff",
-                                                                "topBackgroundColor": "#d53d4c",
-                                                                "bottomBackgroundColor": "#b02331"
-                                                            },
+                                                            "ribbon": {},
                                                             "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
-                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.8",
@@ -3038,13 +3199,102 @@
                                                             },
                                                             "parentId": "3597549",
                                                             "menuFilterIds": [
-                                                                "bestseller",
                                                                 "VEG",
                                                                 "toprated"
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
                                                                 "swiggy_listing_price": "37700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "100460313",
+                                                            "name": "Biscoff Frangipane  Croissant",
+                                                            "category": "Croissants & Viennoiserie",
+                                                            "description": "Golden, flaky croissant filled with Biscoff almond frangipane, baked to perfection and finished with a drizzle of caramelized Biscoff.\n\nAllergens: Milk, Soy, Wheat, Nuts. \n \nNutritional Information (Per 100g): Energy(kcal): 572.4, Protein(g): 10.1, Carbohydrate(g): 47.3 , Fat(g): 39.4\nServing Size : 130g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/7/25/88d59c33-7b8a-4047-b93e-afcd986efa50_b7fe3f9c-f711-4160-9ae5-1236ae949a3f.png_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 31700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "addons": [
+                                                                {
+                                                                    "groupId": "289372137",
+                                                                    "groupName": "Best Paired with:",
+                                                                    "choices": [
+                                                                        {
+                                                                            "id": "147371814",
+                                                                            "name": "Hot Chocolate",
+                                                                            "price": 22700,
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "117038554",
+                                                                            "name": "Classic Cold Coffee",
+                                                                            "price": 22500,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "117038557",
+                                                                            "name": "Mocha Cold Coffee",
+                                                                            "price": 24700,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        }
+                                                                    ],
+                                                                    "maxAddons": 3,
+                                                                    "maxFreeAddons": -1
+                                                                }
+                                                            ],
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "defaultPrice": 31700,
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.7",
+                                                                    "ratingCount": "5 ratings",
+                                                                    "ratingCountV2": "5"
+                                                                },
+                                                                "ratingsPresentationConfig": {
+                                                                    "bgGradient": {
+                                                                        "colours": [
+                                                                            "#C8F9E5",
+                                                                            "#00FFFFFF"
+                                                                        ],
+                                                                        "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                                                    },
+                                                                    "ratingIconColor": "rating_very_good",
+                                                                    "ratingTextColor": "rating_very_good",
+                                                                    "ratingCountTextColor": "rating_very_good",
+                                                                    "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                                                    "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                                                }
+                                                            },
+                                                            "parentId": "107539021",
+                                                            "menuFilterIds": [
+                                                                "VEG",
+                                                                "toprated"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "31700",
                                                                 "swiggy_final_price": "0"
                                                             }
                                                         },
@@ -3230,8 +3480,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "19700",
-                                                                "swiggy_final_price": "0"
+                                                                "swiggy_final_price": "0",
+                                                                "swiggy_listing_price": "19700"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -3510,8 +3760,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_final_price": "0",
-                                                                "swiggy_listing_price": "23700"
+                                                                "swiggy_listing_price": "23700",
+                                                                "swiggy_final_price": "0"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -3567,10 +3817,16 @@
                                                                 "vegClassifier": "NONVEG"
                                                             },
                                                             "defaultPrice": 34700,
-                                                            "ribbon": {},
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
                                                             "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
+                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.0",
@@ -3600,6 +3856,7 @@
                                                             "parentId": "95544300",
                                                             "menuFilterIds": [
                                                                 "EATRIGHT",
+                                                                "bestseller",
                                                                 "NONVEG",
                                                                 "toprated"
                                                             ],
@@ -3701,8 +3958,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "34700",
-                                                                "swiggy_final_price": "0"
+                                                                "swiggy_final_price": "0",
+                                                                "swiggy_listing_price": "34700"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -3796,8 +4053,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "34700",
-                                                                "swiggy_final_price": "0"
+                                                                "swiggy_final_price": "0",
+                                                                "swiggy_listing_price": "34700"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -3854,10 +4111,16 @@
                                                                 "vegClassifier": "VEG"
                                                             },
                                                             "defaultPrice": 17000,
-                                                            "ribbon": {},
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
                                                             "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
+                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.9",
@@ -3881,12 +4144,51 @@
                                                             },
                                                             "parentId": "3597534",
                                                             "menuFilterIds": [
+                                                                "bestseller",
                                                                 "VEG",
                                                                 "toprated"
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
                                                                 "swiggy_listing_price": "17000",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "183906583",
+                                                            "name": "Assorted Sweet Croissants Gift Box",
+                                                            "category": "Croissants & Viennoiserie",
+                                                            "description": "Celebrate this festive season with a luxurious trio of croissants - nutty Almond Frangipane, caramel-kissed Biscoff Frangipane, and indulgent Chocolate  Frangipane, crafted to delight and make your gifting truly special.\n\nAllergens: Milk, Nuts, Wheat, Soy\nNutritional Information (Per 100g): Energy(Kcal): 440.56, Carb(g): 39.33, Protein(g): 8.02, Fat(g): 28.23\nServing Size: 400g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/12/5/53d32c3b-dfd5-449e-aee8-307452ab3b32_53cf57d6-53ab-4827-bd28-3b0f68d88267.png_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 90000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            },
+                                                            "parentId": "111984103",
+                                                            "menuFilterIds": [
+                                                                "VEG"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "90000",
                                                                 "swiggy_final_price": "0"
                                                             }
                                                         },
@@ -4187,8 +4489,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "119700",
-                                                                "swiggy_final_price": "0"
+                                                                "swiggy_final_price": "0",
+                                                                "swiggy_listing_price": "119700"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -4683,6 +4985,102 @@
                                                     "card": {
                                                         "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
                                                         "info": {
+                                                            "id": "198619194",
+                                                            "name": "Tropical Mango Bento Cake [350gms]",
+                                                            "category": "Perfect for 2 Bento Cakes",
+                                                            "description": "Bento cake layered with mango diplomat cream, moist sponge and fresh mango, finished with a buttercream frosting and topped with fresh mango chunks. \n\nAllergens: Milk, Soy, Wheat, Sulphite\n\nNutritional Information (Per 100g): Energy (Kcal): 242.4, Carbohydrate(g): 34.4, Protein(g): 2.2, Fat(g): 10.7\n\nServing Size: 350g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/4/10/77e981f5-f000-4378-b941-3e146ecb785b_3e09bf6f-bb53-40ef-8c4a-abe9b1cc3d41.png_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 64700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "addons": [
+                                                                {
+                                                                    "groupId": "290621793",
+                                                                    "groupName": "Choose a msg:",
+                                                                    "choices": [
+                                                                        {
+                                                                            "id": "60884178",
+                                                                            "name": "Happy Birthday",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "60884179",
+                                                                            "name": "Happy Anniversary",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "60884192",
+                                                                            "name": "Congratulations",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        },
+                                                                        {
+                                                                            "id": "87611901",
+                                                                            "name": "Write your own message kit",
+                                                                            "inStock": 1,
+                                                                            "isVeg": 1,
+                                                                            "isEnabled": 1
+                                                                        }
+                                                                    ],
+                                                                    "maxAddons": 1,
+                                                                    "maxFreeAddons": -1
+                                                                }
+                                                            ],
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "defaultPrice": 64700,
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.0",
+                                                                    "ratingCount": "1 rating",
+                                                                    "ratingCountV2": "1"
+                                                                },
+                                                                "ratingsPresentationConfig": {
+                                                                    "bgGradient": {
+                                                                        "colours": [
+                                                                            "#C8F9E5",
+                                                                            "#00FFFFFF"
+                                                                        ],
+                                                                        "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                                                    },
+                                                                    "ratingIconColor": "rating_very_good",
+                                                                    "ratingTextColor": "rating_very_good",
+                                                                    "ratingCountTextColor": "rating_very_good",
+                                                                    "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                                                    "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                                                }
+                                                            },
+                                                            "parentId": "121496353",
+                                                            "menuFilterIds": [
+                                                                "VEG",
+                                                                "toprated"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "64700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
                                                             "id": "164896723",
                                                             "name": "Mocha Tiramisu Bento Cake (300 gms)",
                                                             "category": "Perfect for 2 Bento Cakes",
@@ -4968,7 +5366,7 @@
                                                 }
                                             ],
                                             "subtitleSuffix": {},
-                                            "image": "FOOD_CATALOG/IMAGES/CMS/2025/7/3/590f9993-e038-4c42-a709-8b4b89aa486b_d8389f06-ccb3-4606-b420-82afa5c36b2f.png",
+                                            "image": "FOOD_CATALOG/IMAGES/CMS/2026/4/10/77e981f5-f000-4378-b941-3e146ecb785b_3e09bf6f-bb53-40ef-8c4a-abe9b1cc3d41.png_compressed",
                                             "categoryId": "59003872"
                                         }
                                     }
@@ -5029,10 +5427,16 @@
                                                                 "vegClassifier": "VEG"
                                                             },
                                                             "defaultPrice": 39700,
-                                                            "ribbon": {},
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
                                                             "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
+                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.6",
@@ -5056,13 +5460,14 @@
                                                             },
                                                             "parentId": "95544291",
                                                             "menuFilterIds": [
+                                                                "bestseller",
                                                                 "VEG",
                                                                 "toprated"
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "39700",
-                                                                "swiggy_final_price": "0"
+                                                                "swiggy_final_price": "0",
+                                                                "swiggy_listing_price": "39700"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -5151,8 +5556,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "39700",
-                                                                "swiggy_final_price": "0"
+                                                                "swiggy_final_price": "0",
+                                                                "swiggy_listing_price": "39700"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -5189,16 +5594,10 @@
                                                             "itemAttribute": {
                                                                 "vegClassifier": "VEG"
                                                             },
-                                                            "ribbon": {
-                                                                "text": "Bestseller",
-                                                                "textColor": "#ffffff",
-                                                                "topBackgroundColor": "#d53d4c",
-                                                                "bottomBackgroundColor": "#b02331"
-                                                            },
+                                                            "ribbon": {},
                                                             "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
-                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.8",
@@ -5222,7 +5621,6 @@
                                                             },
                                                             "parentId": "70169628",
                                                             "menuFilterIds": [
-                                                                "bestseller",
                                                                 "VEG",
                                                                 "toprated"
                                                             ],
@@ -5349,8 +5747,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_final_price": "0",
-                                                                "swiggy_listing_price": "27700"
+                                                                "swiggy_listing_price": "27700",
+                                                                "swiggy_final_price": "0"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -5406,6 +5804,44 @@
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
                                                                 "swiggy_listing_price": "39700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "200789608",
+                                                            "name": "Fresh Mango Cream Pastry (1 pc)",
+                                                            "category": "Cheesecakes & Pastries",
+                                                            "description": "Light sponge with mango custard cream, finished with cream piping and a fresh mango crown - indulgence in every bite! \n\nAllergens: Nuts, Milk, Soy\n\nNutritional Information (Per 100g): Energy (Kcal): 201.4, Protein(g): 2.5, Carbohydrate(g): 31.2, Fat(g): 7.8\n\nServing Size: 110g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/5/15/9ec5293e-0c6e-4b57-8cc7-798ac3c98e2f_d23511c0-e11a-4b8e-aa20-6026fea24825.png",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 19700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            },
+                                                            "parentId": "122872461",
+                                                            "menuFilterIds": [
+                                                                "VEG"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "19700",
                                                                 "swiggy_final_price": "0"
                                                             }
                                                         },
@@ -5498,16 +5934,10 @@
                                                             "itemAttribute": {
                                                                 "vegClassifier": "NONVEG"
                                                             },
-                                                            "ribbon": {
-                                                                "text": "Bestseller",
-                                                                "textColor": "#ffffff",
-                                                                "topBackgroundColor": "#d53d4c",
-                                                                "bottomBackgroundColor": "#b02331"
-                                                            },
+                                                            "ribbon": {},
                                                             "type": "ITEM",
                                                             "itemBadge": {},
                                                             "badgesV2": {},
-                                                            "isBestseller": true,
                                                             "ratings": {
                                                                 "aggregatedRating": {
                                                                     "rating": "4.9",
@@ -5531,7 +5961,6 @@
                                                             },
                                                             "parentId": "69853878",
                                                             "menuFilterIds": [
-                                                                "bestseller",
                                                                 "NONVEG",
                                                                 "toprated"
                                                             ],
@@ -5605,6 +6034,62 @@
                                                     "card": {
                                                         "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
                                                         "info": {
+                                                            "id": "198619226",
+                                                            "name": "Classic Mango Tres Leches",
+                                                            "category": "Tres Leches & Pudding",
+                                                            "description": "A twist on the classic dessert, this tropical dessert is made with a light and fluffy sponge cake soaked in mango flavored milk, with chunks of fresh mango.\n\nAllergens: Milk, Wheat, Soy, Egg \n\nNutritional Information (Per 100g): Energy (Kcal): 200.83, Carbohydrate(g): 25.16, Protein(g): 3.58, Fat(g): 9.67\n\nServing Size: 210 g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/4/16/0d6393e0-ebc1-4e5b-acd9-a9e541a4727b_73fac1ee-818d-4463-848c-ba5d0f1357b5.png",
+                                                            "inStock": 1,
+                                                            "price": 36700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "NONVEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "5.0",
+                                                                    "ratingCount": "2 ratings",
+                                                                    "ratingCountV2": "2"
+                                                                },
+                                                                "ratingsPresentationConfig": {
+                                                                    "bgGradient": {
+                                                                        "colours": [
+                                                                            "#C8F9E5",
+                                                                            "#00FFFFFF"
+                                                                        ],
+                                                                        "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                                                    },
+                                                                    "ratingIconColor": "rating_very_good",
+                                                                    "ratingTextColor": "rating_very_good",
+                                                                    "ratingCountTextColor": "rating_very_good",
+                                                                    "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                                                    "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                                                }
+                                                            },
+                                                            "parentId": "121386808",
+                                                            "menuFilterIds": [
+                                                                "NONVEG",
+                                                                "toprated"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "36700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
                                                             "id": "180506762",
                                                             "name": "Tiramisu Pudding",
                                                             "category": "Tres Leches & Pudding",
@@ -5657,8 +6142,46 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
+                                                                "swiggy_listing_price": "32700",
+                                                                "swiggy_final_price": "0"
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "199763711",
+                                                            "name": "Mango Coconut Serradura Pudding [215g]",
+                                                            "category": "Tres Leches & Pudding",
+                                                            "description": "Creamy coconut mango mousse, amidst layers of mango pulp soaked sponge, textures of crumbly biscuit and topped with chunks of fresh mango.\n\nAllergens: Wheat, Milk, Soy, Nuts, Sulphite\n\nNutritional Information (Per 100g): Energy (Kcal): 219.01, Carbohydrate(g): 28.19, Protein(g): 2.33, Fat(g): 10.99\n\nServing Size: 215g",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/6/9/598430c0-3520-448f-9eda-f52bcd9bc383_75d249cf-6298-4dda-b2b4-2191dac01376.png",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 34700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            },
+                                                            "parentId": "122216905",
+                                                            "menuFilterIds": [
+                                                                "VEG"
+                                                            ],
+                                                            "priceComparisonComms": {},
+                                                            "instrumentationMetaMap": {
                                                                 "swiggy_final_price": "0",
-                                                                "swiggy_listing_price": "32700"
+                                                                "swiggy_listing_price": "34700"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -5783,8 +6306,8 @@
                                                             ],
                                                             "priceComparisonComms": {},
                                                             "instrumentationMetaMap": {
-                                                                "swiggy_listing_price": "21700",
-                                                                "swiggy_final_price": "0"
+                                                                "swiggy_final_price": "0",
+                                                                "swiggy_listing_price": "21700"
                                                             }
                                                         },
                                                         "analytics": {},
@@ -6059,8 +6582,8 @@
         "firstOffsetRequest": true,
         "isQCLink": false
     },
-    "tid": "eyJLSUQiOiIyIiwiYWxnIjoiSFMyNTYiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3ODE2MzgyODQsImlhdCI6MTc4MTYzNDY4NCwic2Vzc2lvbl9kYXRhIjoiQmxGS0lMM05ZWGhNb1ZxZ0ZQR3hwdklpNmNpL0ZqYjRaTWVYNy9uT3BYMnViU3NlVlVreEM0OTB0SXUzNHJBT0NqS3gxT24yQ0lycGdnaE1OSzNnRDJ6ZTN2RFUydGoxL0pEaVdHNVN2d3lTQXdCd2hTbHk4TVBmSnNNOFQ2d09DNjUvL1FCT2Rldkg1cEdoSmdoZnRWV1N2N0lkKzRKZ1QzbXdwVVpDZ2VtUlIwbE5ZV2NVOHQ0ODVpMGtLWVJzb0FCNldPOVhhZTlNOXJwRW8yV1hmZz09Iiwic2lkIjoicnlvOTZmZTExNmUtMThkOS00MTU5LWIxYmQtMDQzOTgzNzBmIiwic3ViIjoiYTgyODYzZWUtYjM2Ni00OGE5LTg5MTItYTg0YWZiNzQ1M2U5IiwidXNlcl9pZCI6IjAifQ.Ft1q73rxc36ByzvJOg9U363Ml2BbUEsMl47ciZn9ks4",
-    "sid": "ryo96fe116e-18d9-4159-b1bd-04398370f",
-    "deviceId": "666cae6b-a178-f579-a3e5-22876a2fbc1e",
-    "csrfToken": "lHBPnTCGUpXu-yXNUJ1dumPQj852m1rJqwFE4gqk"
+    "tid": "eyJLSUQiOiIyIiwiYWxnIjoiSFMyNTYiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3ODE2NzkxMTUsImlhdCI6MTc4MTY3NTUxNSwic2Vzc2lvbl9kYXRhIjoidFE0L21MVk5adUxQZTJLM3dUMG5yZ3E2NDhqZlk0RG1kUVNMYUlzTnovdHFQSDdzaHZoY2pGVGhNaUNYWFlMbVhlS1NTZUlhMlI2aUdObm1pYk55RkNJTjc5YzRsbmpuZkRlcmhDMjRvSERKcXhjVDFQc2x3a2tCY1NXYytMUE9NWWtoNE9mNFRPSEVJM2pFdU43Zi9KVkUwMXEwcmtJQnJaQVZaY01RMHVNcGtHdVdQdlM4aC9DUUZsUlNkMkViUzRVcHJmZ2NERXRMU3FxRG5sTHRZdz09Iiwic2lkIjoicnl6Njc3MDA5YjctNGFlOC00ZjU3LThjMjUtMjA2YmVjYTdhIiwic3ViIjoiNDc1ODBmMjctODJhNC00MjM3LWI2NjQtZjg1Y2YxZWE5ZmViIiwidXNlcl9pZCI6IjAifQ.ubppuOnzWqD6LMmTBZdGmOk5xeKzf6X2M5hz189yCaM",
+    "sid": "ryz677009b7-4ae8-4f57-8c25-206beca7a",
+    "deviceId": "5990a07f-e59a-ae9f-709b-c8c8e38c2666",
+    "csrfToken": "Fc3CEfs0ahEC-hSWbK4kWsM7Z8_LH-uwLxbnJd8o"
 }

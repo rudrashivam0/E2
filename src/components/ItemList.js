@@ -21,10 +21,10 @@ const ItemList = ({ items }) => {
         <div >
 
             {items.map((item) => (
-                <div 
-                data-testid= "foodDetail"
-                key={item.card?.info?.id} 
-                className='p-2 m-2 border-gray-300 border-b-2 text-left flex justify-between gap-4 '>
+                <div
+                    data-testid="foodDetail"
+                    key={item.card?.info?.id}
+                    className='p-2 m-2 border-gray-300 border-b-2 text-left flex justify-between gap-4 '>
                     <div className='pt-4 ' >
                         <span className='pr-4'>
                             {item.card.info.name}
